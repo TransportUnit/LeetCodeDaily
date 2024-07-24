@@ -118,7 +118,9 @@ public class Case<TInput, TResult>
 
     public Case<TInput, TResult> PrintResult()
     {
-        $"Test {(Passed ? "passed" : "failed")}.".Print();
+        "Test ".Print(false);
+        $"{(Passed ? "PASSED" : "FAILED")}".Print(false, Passed ? ConsoleColor.Green : ConsoleColor.Red);
+        ".".Print();
         $"Input: {Input.TryGetObjectString()}".Print();
         $"Result: {ActualResult.TryGetObjectString()}".Print();
         $"Expected: {ExpectedResult.TryGetObjectString()}".Print();
