@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeetCodeDaily", "LeetCodeDa
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Problems", "Problems", "{7C0406F4-177F-4571-8741-A5EB88DB5B26}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2191. Sort the Jumbled Numbers", "2191. Sort the Jumbled Numbers\2191. Sort the Jumbled Numbers.csproj", "{EF1B3A67-D8EC-4AC8-8A67-61CAC4E7F827}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2191. Sort the Jumbled Numbers", "Problems\2191. Sort the Jumbled Numbers\2191. Sort the Jumbled Numbers.csproj", "{EF1B3A67-D8EC-4AC8-8A67-61CAC4E7F827}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

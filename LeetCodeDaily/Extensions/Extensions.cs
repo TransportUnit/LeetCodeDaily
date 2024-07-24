@@ -87,9 +87,31 @@ public static class Extensions
         return split.Select(x => (T)Convert.ChangeType(x, typeof(T))).ToArray();
     }
 
-    public static void Print(this object obj)
+    public static void Print(this object obj, bool newLine = true, ConsoleColor? color = null)
     {
-        Console.WriteLine(obj.TryGetObjectString());
+        bool setColor = false;
+        try
+        {
+            if (color is not null)
+            {
+                Console.ForegroundColor = color.Value;
+                setColor = true;
+            }
+
+            if (newLine)
+            {
+                Console.WriteLine(obj.TryGetObjectString());
+            }
+            else
+            {
+                Console.Write(obj.TryGetObjectString());
+            }
+        }
+        finally
+        {
+            if (setColor)
+                Console.ResetColor();
+        }
     }
 
     public static string TryGetObjectString(this object? input)
