@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35027.167
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeetCodeDaily", "LeetCodeDaily\LeetCodeDaily.csproj", "{C2342A45-EC9E-4368-A7CE-29333AD54101}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LeetCodeDaily", "LeetCodeDaily\LeetCodeDaily.csproj", "{C2342A45-EC9E-4368-A7CE-29333AD54101}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Problems", "Problems", "{7C0406F4-177F-4571-8741-A5EB88DB5B26}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2191. Sort the Jumbled Numbers", "Problems\2191. Sort the Jumbled Numbers\2191. Sort the Jumbled Numbers.csproj", "{EF1B3A67-D8EC-4AC8-8A67-61CAC4E7F827}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2191. Sort the Jumbled Numbers", "Problems\2191. Sort the Jumbled Numbers\2191. Sort the Jumbled Numbers.csproj", "{EF1B3A67-D8EC-4AC8-8A67-61CAC4E7F827}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14. Longest Common Prefix", "Problems\14. Longest Common Prefix\14. Longest Common Prefix.csproj", "{0506E513-44F8-424F-A2FB-B228CDF8CDC3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,12 +25,17 @@ Global
 		{EF1B3A67-D8EC-4AC8-8A67-61CAC4E7F827}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EF1B3A67-D8EC-4AC8-8A67-61CAC4E7F827}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EF1B3A67-D8EC-4AC8-8A67-61CAC4E7F827}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0506E513-44F8-424F-A2FB-B228CDF8CDC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0506E513-44F8-424F-A2FB-B228CDF8CDC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0506E513-44F8-424F-A2FB-B228CDF8CDC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0506E513-44F8-424F-A2FB-B228CDF8CDC3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{EF1B3A67-D8EC-4AC8-8A67-61CAC4E7F827} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
+		{0506E513-44F8-424F-A2FB-B228CDF8CDC3} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4AA608D7-351A-4872-A7C1-0E41362A6953}
