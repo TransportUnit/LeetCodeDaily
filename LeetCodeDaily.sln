@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14. Longest Common Prefix",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2094. Finding 3-Digit Even Numbers", "Problems\2094. Finding 3-Digit Even Numbers\2094. Finding 3-Digit Even Numbers.csproj", "{AF7B0BBB-A581-4AEA-902A-4E6309009017}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2108. Find First Palindromic String in the Array", "Problems\2108. Find First Palindromic String in the Array\2108. Find First Palindromic String in the Array.csproj", "{1D4F95DA-45A5-4B1C-8566-37471553286E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,10 @@ Global
 		{AF7B0BBB-A581-4AEA-902A-4E6309009017}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AF7B0BBB-A581-4AEA-902A-4E6309009017}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AF7B0BBB-A581-4AEA-902A-4E6309009017}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D4F95DA-45A5-4B1C-8566-37471553286E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D4F95DA-45A5-4B1C-8566-37471553286E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D4F95DA-45A5-4B1C-8566-37471553286E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D4F95DA-45A5-4B1C-8566-37471553286E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -43,6 +49,7 @@ Global
 		{EF1B3A67-D8EC-4AC8-8A67-61CAC4E7F827} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 		{0506E513-44F8-424F-A2FB-B228CDF8CDC3} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 		{AF7B0BBB-A581-4AEA-902A-4E6309009017} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
+		{1D4F95DA-45A5-4B1C-8566-37471553286E} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4AA608D7-351A-4872-A7C1-0E41362A6953}
