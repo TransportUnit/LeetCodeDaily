@@ -9,11 +9,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Problems", "Problems", "{7C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2191. Sort the Jumbled Numbers", "Problems\2191. Sort the Jumbled Numbers\2191. Sort the Jumbled Numbers.csproj", "{EF1B3A67-D8EC-4AC8-8A67-61CAC4E7F827}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14. Longest Common Prefix", "Problems\14. Longest Common Prefix\14. Longest Common Prefix.csproj", "{0506E513-44F8-424F-A2FB-B228CDF8CDC3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "14. Longest Common Prefix", "Problems\14. Longest Common Prefix\14. Longest Common Prefix.csproj", "{0506E513-44F8-424F-A2FB-B228CDF8CDC3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2094. Finding 3-Digit Even Numbers", "Problems\2094. Finding 3-Digit Even Numbers\2094. Finding 3-Digit Even Numbers.csproj", "{AF7B0BBB-A581-4AEA-902A-4E6309009017}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2094. Finding 3-Digit Even Numbers", "Problems\2094. Finding 3-Digit Even Numbers\2094. Finding 3-Digit Even Numbers.csproj", "{AF7B0BBB-A581-4AEA-902A-4E6309009017}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2108. Find First Palindromic String in the Array", "Problems\2108. Find First Palindromic String in the Array\2108. Find First Palindromic String in the Array.csproj", "{1D4F95DA-45A5-4B1C-8566-37471553286E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2108. Find First Palindromic String in the Array", "Problems\2108. Find First Palindromic String in the Array\2108. Find First Palindromic String in the Array.csproj", "{1D4F95DA-45A5-4B1C-8566-37471553286E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2181. Merge Nodes in Between Zeros", "Problems\2181. Merge Nodes in Between Zeros\2181. Merge Nodes in Between Zeros.csproj", "{FD4B5AC3-5CFE-4DF0-823A-185C3B42187D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +43,10 @@ Global
 		{1D4F95DA-45A5-4B1C-8566-37471553286E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1D4F95DA-45A5-4B1C-8566-37471553286E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1D4F95DA-45A5-4B1C-8566-37471553286E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD4B5AC3-5CFE-4DF0-823A-185C3B42187D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD4B5AC3-5CFE-4DF0-823A-185C3B42187D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD4B5AC3-5CFE-4DF0-823A-185C3B42187D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD4B5AC3-5CFE-4DF0-823A-185C3B42187D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -50,6 +56,7 @@ Global
 		{0506E513-44F8-424F-A2FB-B228CDF8CDC3} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 		{AF7B0BBB-A581-4AEA-902A-4E6309009017} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 		{1D4F95DA-45A5-4B1C-8566-37471553286E} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
+		{FD4B5AC3-5CFE-4DF0-823A-185C3B42187D} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4AA608D7-351A-4872-A7C1-0E41362A6953}
