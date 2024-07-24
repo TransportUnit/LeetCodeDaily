@@ -17,6 +17,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2108. Find First Palindromi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2181. Merge Nodes in Between Zeros", "Problems\2181. Merge Nodes in Between Zeros\2181. Merge Nodes in Between Zeros.csproj", "{FD4B5AC3-5CFE-4DF0-823A-185C3B42187D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "706. Design HashMap", "Problems\706. Design HashMap\706. Design HashMap.csproj", "{CD15EDAB-D482-4C43-83DB-BB811D7B0E36}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +49,10 @@ Global
 		{FD4B5AC3-5CFE-4DF0-823A-185C3B42187D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FD4B5AC3-5CFE-4DF0-823A-185C3B42187D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FD4B5AC3-5CFE-4DF0-823A-185C3B42187D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD15EDAB-D482-4C43-83DB-BB811D7B0E36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD15EDAB-D482-4C43-83DB-BB811D7B0E36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD15EDAB-D482-4C43-83DB-BB811D7B0E36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD15EDAB-D482-4C43-83DB-BB811D7B0E36}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -57,6 +63,7 @@ Global
 		{AF7B0BBB-A581-4AEA-902A-4E6309009017} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 		{1D4F95DA-45A5-4B1C-8566-37471553286E} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 		{FD4B5AC3-5CFE-4DF0-823A-185C3B42187D} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
+		{CD15EDAB-D482-4C43-83DB-BB811D7B0E36} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4AA608D7-351A-4872-A7C1-0E41362A6953}
