@@ -37,6 +37,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1945. Sum of Digits of Stri
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1941. Check if All Characters Have Equal Number of Occurrences", "Problems\1941. Check if All Characters Have Equal Number of Occurrences\1941. Check if All Characters Have Equal Number of Occurrences.csproj", "{7A3F48B3-6B6B-4C73-8E6F-9C832C32F7C1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "58. Length of Last Word", "Problems\58. Length of Last Word\58. Length of Last Word.csproj", "{A064F3FE-7A7D-49CB-87BB-00540AF37391}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -107,6 +109,10 @@ Global
 		{7A3F48B3-6B6B-4C73-8E6F-9C832C32F7C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7A3F48B3-6B6B-4C73-8E6F-9C832C32F7C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7A3F48B3-6B6B-4C73-8E6F-9C832C32F7C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A064F3FE-7A7D-49CB-87BB-00540AF37391}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A064F3FE-7A7D-49CB-87BB-00540AF37391}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A064F3FE-7A7D-49CB-87BB-00540AF37391}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A064F3FE-7A7D-49CB-87BB-00540AF37391}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -127,6 +133,7 @@ Global
 		{E81DABD2-91EF-42ED-BB88-CAFD27613D40} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 		{CC428C60-6D2C-46F3-BCBC-68D94D605C68} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 		{7A3F48B3-6B6B-4C73-8E6F-9C832C32F7C1} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
+		{A064F3FE-7A7D-49CB-87BB-00540AF37391} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4AA608D7-351A-4872-A7C1-0E41362A6953}
