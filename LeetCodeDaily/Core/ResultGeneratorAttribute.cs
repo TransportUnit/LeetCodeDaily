@@ -3,11 +3,25 @@ using System.Reflection;
 
 namespace LeetCodeDaily.Core;
 
+[AttributeUsage(AttributeTargets.Method, AllowMultiple = false, Inherited = false)]
 public class ResultGeneratorAttribute : Attribute
 {
     public static object? SolutionInstance { get; private set; } = null;
 
-    public static void Detect()
+    /// <summary>
+    /// Can be used to differentiate between different approaches for the same task.<br/>
+    /// <see cref="Detect(int)"/> presets the case to be run with the provided approach.<br/>
+    /// Default value: 0.
+    /// </summary>
+    public int ApproachIndex { get; set; } = 0;
+
+    /// <summary>
+    /// Searches for a method with the <see cref="ResultGeneratorAttribute"/> and the provided approachIndex and presets the generic <see cref="Case{TInput, TResult}"/> for the selected method.
+    /// </summary>
+    /// <param name="approachIndex"></param>
+    /// <exception cref="NullReferenceException"></exception>
+    /// <exception cref="InvalidOperationException"></exception>
+    public static void Detect(int approachIndex = 0)
     {
         var entryAssembly = Assembly.GetEntryAssembly();
 
@@ -37,7 +51,7 @@ public class ResultGeneratorAttribute : Attribute
         var resultGeneratorMethodInfo =
             solutionType
                 .GetMethods(BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic)
-                .FirstOrDefault(x => x.GetCustomAttributes(typeof(ResultGeneratorAttribute)).Any());
+                .FirstOrDefault(x => x.GetCustomAttributes(typeof(ResultGeneratorAttribute)).Any(x => ((ResultGeneratorAttribute)x).ApproachIndex == approachIndex));
 
         if (resultGeneratorMethodInfo == null)
         {

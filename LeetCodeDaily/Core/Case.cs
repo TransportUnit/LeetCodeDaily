@@ -72,11 +72,24 @@ public class Case
                 .MakeGenericMethod(inputType, returnType);
 
         genericSetResultGeneratorMethod.Invoke(null, new object[] { @convertedDelegate });
+
+        var genericSetApproachNameMethod =
+            typeof(Case)
+                .GetMethods(BindingFlags.NonPublic | BindingFlags.Static)
+                .First(m => m.IsGenericMethod && m.Name == nameof(Case.SetApproachName))
+                .MakeGenericMethod(inputType, returnType);
+
+        genericSetApproachNameMethod.Invoke(null, new object[] { @delegate.Method.Name });
     }
 
     public static void SetResultGenerator<TInput, TResult>(Func<TInput, TResult> resultGenerator)
     {
         Case<TInput, TResult>.ResultGenerator = resultGenerator;
+    }
+
+    private static void SetApproachName<TInput, TResult>(string approachName)
+    {
+        Case<TInput, TResult>.ApproachName = approachName;
     }
 
     public static void SetResultChecker<TInput, TResult>(Func<Case<TInput, TResult>, bool> resultChecker)

@@ -6,6 +6,7 @@ namespace LeetCodeDaily.Core;
 
 public class Case<TInput, TResult>
 {
+    public static string ApproachName { get; set; } = string.Empty;
     public static Func<TInput, TResult>? ResultGenerator { get; set; }
     public static Func<Case<TInput, TResult>, bool>? ResultChecker { get; set; }
 
@@ -118,14 +119,20 @@ public class Case<TInput, TResult>
 
     public Case<TInput, TResult> PrintResult()
     {
-        "Test ".Print(false);
-        $"{(Passed ? "PASSED" : "FAILED")}".Print(false, Passed ? ConsoleColor.Green : ConsoleColor.Red);
+        var approachNameExists = !string.IsNullOrEmpty(ApproachName);
+
+        if (approachNameExists)
+        {
+            $"{ApproachName} ".Print(newLine: true, color: ConsoleColor.White);
+        }
+        "Test ".Print(newLine: false, indent: approachNameExists);
+        $"{(Passed ? "PASSED" : "FAILED")}".Print(newLine: false, color: Passed ? ConsoleColor.Green : ConsoleColor.Red);
         ".".Print();
-        $"Input: {Input.TryGetObjectString()}".Print();
-        $"Result: {ActualResult.TryGetObjectString()}".Print();
-        $"Expected: {ExpectedResult.TryGetObjectString()}".Print();
-        $"Time: {ExecutionTime.TotalMilliseconds.TryGetObjectString()} ms".Print();
-        string.Empty.Print();
+        $"Input: {Input.TryGetObjectString()}".Print(indent: approachNameExists);
+        $"Result: {ActualResult.TryGetObjectString()}".Print(indent: approachNameExists);
+        $"Expected: {ExpectedResult.TryGetObjectString()}".Print(indent: approachNameExists);
+        $"Time: {ExecutionTime.TotalMilliseconds.TryGetObjectString()} ms".Print(indent: approachNameExists);
+        Environment.NewLine.Print();
         return this;
     }
 
