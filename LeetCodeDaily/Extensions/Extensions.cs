@@ -83,6 +83,10 @@ public static class Extensions
         arrayString = removeQuotes ? arrayString.Replace("\"", "") : arrayString;
 
         arrayString = arrayString.Trim(new[] { '[', ']' });
+
+        if (string.IsNullOrEmpty(arrayString))
+            return Array.Empty<T>();
+
         var split = arrayString.Split(delimiter);
         return split.Select(x => (T)Convert.ChangeType(x, typeof(T))).ToArray();
     }
