@@ -145,4 +145,10 @@ public class Case<TInput, TResult>
         SubCases.Add(subCase);
         return this;
     }
+
+    public Case<TInput, TResult> SetResultChecker(Func<Case<TInput, TResult>, bool> resultChecker)
+    {
+        ResultChecker = resultChecker;
+        return this;
+    }
 }
