@@ -43,9 +43,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "874. Walking Robot Simulati
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "191. Number of 1 Bits", "Problems\191. Number of 1 Bits\191. Number of 1 Bits.csproj", "{5E800F57-A217-4ADB-94BB-9C9DCE7FA4CD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "136. Single Number", "Problems\136. Single Number\136. Single Number.csproj", "{0C8DB3A0-A8DF-4D86-9D90-85AA4F6F0F40}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "136. Single Number", "Problems\136. Single Number\136. Single Number.csproj", "{0C8DB3A0-A8DF-4D86-9D90-85AA4F6F0F40}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "137. Single Number II", "Problems\137. Single Number II\137. Single Number II.csproj", "{C797758C-5603-48AE-9CEC-2555B4D38D65}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "137. Single Number II", "Problems\137. Single Number II\137. Single Number II.csproj", "{C797758C-5603-48AE-9CEC-2555B4D38D65}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2028. Find Missing Observations", "Problems\2028. Find Missing Observations\2028. Find Missing Observations.csproj", "{5705C663-534E-44E1-841A-49313F28C814}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3217. Delete Nodes From Linked List Present in Array", "Problems\3217. Delete Nodes From Linked List Present in Array\3217. Delete Nodes From Linked List Present in Array.csproj", "{8FC6773C-B300-4EC6-8677-016064683C7C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -137,6 +141,14 @@ Global
 		{C797758C-5603-48AE-9CEC-2555B4D38D65}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C797758C-5603-48AE-9CEC-2555B4D38D65}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C797758C-5603-48AE-9CEC-2555B4D38D65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5705C663-534E-44E1-841A-49313F28C814}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5705C663-534E-44E1-841A-49313F28C814}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5705C663-534E-44E1-841A-49313F28C814}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5705C663-534E-44E1-841A-49313F28C814}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FC6773C-B300-4EC6-8677-016064683C7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FC6773C-B300-4EC6-8677-016064683C7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FC6773C-B300-4EC6-8677-016064683C7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FC6773C-B300-4EC6-8677-016064683C7C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -162,6 +174,8 @@ Global
 		{5E800F57-A217-4ADB-94BB-9C9DCE7FA4CD} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 		{0C8DB3A0-A8DF-4D86-9D90-85AA4F6F0F40} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 		{C797758C-5603-48AE-9CEC-2555B4D38D65} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
+		{5705C663-534E-44E1-841A-49313F28C814} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
+		{8FC6773C-B300-4EC6-8677-016064683C7C} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4AA608D7-351A-4872-A7C1-0E41362A6953}
