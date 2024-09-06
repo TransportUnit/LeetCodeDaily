@@ -49,7 +49,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "137. Single Number II", "Pr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2028. Find Missing Observations", "Problems\2028. Find Missing Observations\2028. Find Missing Observations.csproj", "{5705C663-534E-44E1-841A-49313F28C814}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3217. Delete Nodes From Linked List Present in Array", "Problems\3217. Delete Nodes From Linked List Present in Array\3217. Delete Nodes From Linked List Present in Array.csproj", "{8FC6773C-B300-4EC6-8677-016064683C7C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3217. Delete Nodes From Linked List Present in Array", "Problems\3217. Delete Nodes From Linked List Present in Array\3217. Delete Nodes From Linked List Present in Array.csproj", "{8FC6773C-B300-4EC6-8677-016064683C7C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1486. XOR Operation in an Array", "Problems\1486. XOR Operation in an Array\1486. XOR Operation in an Array.csproj", "{330E7582-362E-4BF3-AFBB-7D85B3659B5C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -149,6 +151,10 @@ Global
 		{8FC6773C-B300-4EC6-8677-016064683C7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8FC6773C-B300-4EC6-8677-016064683C7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8FC6773C-B300-4EC6-8677-016064683C7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{330E7582-362E-4BF3-AFBB-7D85B3659B5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{330E7582-362E-4BF3-AFBB-7D85B3659B5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{330E7582-362E-4BF3-AFBB-7D85B3659B5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{330E7582-362E-4BF3-AFBB-7D85B3659B5C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -176,6 +182,7 @@ Global
 		{C797758C-5603-48AE-9CEC-2555B4D38D65} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 		{5705C663-534E-44E1-841A-49313F28C814} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 		{8FC6773C-B300-4EC6-8677-016064683C7C} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
+		{330E7582-362E-4BF3-AFBB-7D85B3659B5C} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4AA608D7-351A-4872-A7C1-0E41362A6953}
