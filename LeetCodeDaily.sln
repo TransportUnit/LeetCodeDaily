@@ -53,13 +53,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3217. Delete Nodes From Lin
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1486. XOR Operation in an Array", "Problems\1486. XOR Operation in an Array\1486. XOR Operation in an Array.csproj", "{330E7582-362E-4BF3-AFBB-7D85B3659B5C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2658. Maximum Number of Fish in a Grid", "Problems\2658. Maximum Number of Fish in a Grid\2658. Maximum Number of Fish in a Grid.csproj", "{0B99D425-0A9C-43C7-9499-F4754520C9F5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2658. Maximum Number of Fish in a Grid", "Problems\2658. Maximum Number of Fish in a Grid\2658. Maximum Number of Fish in a Grid.csproj", "{0B99D425-0A9C-43C7-9499-F4754520C9F5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2744. Find Maximum Number of String Pairs", "Problems\2744. Find Maximum Number of String Pairs\2744. Find Maximum Number of String Pairs.csproj", "{F7F34BD3-B2BA-4BB6-9AFC-90D0E3596CAC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2744. Find Maximum Number of String Pairs", "Problems\2744. Find Maximum Number of String Pairs\2744. Find Maximum Number of String Pairs.csproj", "{F7F34BD3-B2BA-4BB6-9AFC-90D0E3596CAC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2778. Sum of Squares of Special Elements", "Problems\2778. Sum of Squares of Special Elements\2778. Sum of Squares of Special Elements.csproj", "{19A2AE44-6FF1-4948-A05B-350F4BE12E20}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2778. Sum of Squares of Special Elements", "Problems\2778. Sum of Squares of Special Elements\2778. Sum of Squares of Special Elements.csproj", "{19A2AE44-6FF1-4948-A05B-350F4BE12E20}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2807. Insert Greatest Common Divisors in Linked List", "Problems\2807. Insert Greatest Common Divisors in Linked List\2807. Insert Greatest Common Divisors in Linked List.csproj", "{DE361EAF-DDDF-4A8F-B81D-F36819E49106}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2807. Insert Greatest Common Divisors in Linked List", "Problems\2807. Insert Greatest Common Divisors in Linked List\2807. Insert Greatest Common Divisors in Linked List.csproj", "{DE361EAF-DDDF-4A8F-B81D-F36819E49106}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2220. Minimum Bit Flips to Convert Number", "Problems\2220. Minimum Bit Flips to Convert Number\2220. Minimum Bit Flips to Convert Number.csproj", "{3F07E1B5-8E65-40EF-A60C-852B0A00DCA3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -179,6 +181,10 @@ Global
 		{DE361EAF-DDDF-4A8F-B81D-F36819E49106}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DE361EAF-DDDF-4A8F-B81D-F36819E49106}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DE361EAF-DDDF-4A8F-B81D-F36819E49106}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F07E1B5-8E65-40EF-A60C-852B0A00DCA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F07E1B5-8E65-40EF-A60C-852B0A00DCA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F07E1B5-8E65-40EF-A60C-852B0A00DCA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F07E1B5-8E65-40EF-A60C-852B0A00DCA3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -211,6 +217,7 @@ Global
 		{F7F34BD3-B2BA-4BB6-9AFC-90D0E3596CAC} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 		{19A2AE44-6FF1-4948-A05B-350F4BE12E20} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 		{DE361EAF-DDDF-4A8F-B81D-F36819E49106} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
+		{3F07E1B5-8E65-40EF-A60C-852B0A00DCA3} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4AA608D7-351A-4872-A7C1-0E41362A6953}
