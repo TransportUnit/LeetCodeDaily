@@ -151,4 +151,10 @@ public class Case<TInput, TResult>
         ResultChecker = resultChecker;
         return this;
     }
+
+    public Case<TInput, TResult> Detect(int approachIndex = 0)
+    {
+        ResultGeneratorAttribute.Detect(approachIndex);
+        return this;
+    }
 }
