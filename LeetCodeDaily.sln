@@ -69,6 +69,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1310. XOR Queries of a Suba
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1309. Decrypt String from Alphabet to Integer Mapping", "Problems\1309. Decrypt String from Alphabet to Integer Mapping\1309. Decrypt String from Alphabet to Integer Mapping.csproj", "{B426CB38-FCF4-44BF-B93D-486D0C1618E1}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1304. Find N Unique Integers Sum up to Zero", "Problems\1304. Find N Unique Integers Sum up to Zero\1304. Find N Unique Integers Sum up to Zero.csproj", "{9B414A9C-FD34-4225-9602-EEDAFDC6D8C2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -203,6 +205,10 @@ Global
 		{B426CB38-FCF4-44BF-B93D-486D0C1618E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B426CB38-FCF4-44BF-B93D-486D0C1618E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B426CB38-FCF4-44BF-B93D-486D0C1618E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B414A9C-FD34-4225-9602-EEDAFDC6D8C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B414A9C-FD34-4225-9602-EEDAFDC6D8C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B414A9C-FD34-4225-9602-EEDAFDC6D8C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B414A9C-FD34-4225-9602-EEDAFDC6D8C2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -239,6 +245,7 @@ Global
 		{69DA993B-1593-4250-978C-5C769C5E6BE6} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 		{6839D947-019A-40B1-AF96-9AABBE5DC067} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 		{B426CB38-FCF4-44BF-B93D-486D0C1618E1} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
+		{9B414A9C-FD34-4225-9602-EEDAFDC6D8C2} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4AA608D7-351A-4872-A7C1-0E41362A6953}
