@@ -79,6 +79,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "539. Minimum Time Differenc
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "884. Uncommon Words from Two Sentences", "Problems\884. Uncommon Words from Two Sentences\884. Uncommon Words from Two Sentences.csproj", "{57090BEC-FFEC-45D9-9BD7-401CB8AE4180}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "883. Projection Area of 3D Shapes", "Problems\883. Projection Area of 3D Shapes\883. Projection Area of 3D Shapes.csproj", "{A72088BF-4E97-49A8-B766-6A9930107F8D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -233,6 +235,10 @@ Global
 		{57090BEC-FFEC-45D9-9BD7-401CB8AE4180}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{57090BEC-FFEC-45D9-9BD7-401CB8AE4180}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{57090BEC-FFEC-45D9-9BD7-401CB8AE4180}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A72088BF-4E97-49A8-B766-6A9930107F8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A72088BF-4E97-49A8-B766-6A9930107F8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A72088BF-4E97-49A8-B766-6A9930107F8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A72088BF-4E97-49A8-B766-6A9930107F8D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -274,6 +280,7 @@ Global
 		{AC4DF912-077A-4A9A-8A56-8BFC0CFE54E0} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 		{B7A641BA-4301-4D1D-9D32-F5CA95254ADA} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 		{57090BEC-FFEC-45D9-9BD7-401CB8AE4180} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
+		{A72088BF-4E97-49A8-B766-6A9930107F8D} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4AA608D7-351A-4872-A7C1-0E41362A6953}
