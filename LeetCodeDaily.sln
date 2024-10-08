@@ -71,7 +71,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1309. Decrypt String from A
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1304. Find N Unique Integers Sum up to Zero", "Problems\1304. Find N Unique Integers Sum up to Zero\1304. Find N Unique Integers Sum up to Zero.csproj", "{9B414A9C-FD34-4225-9602-EEDAFDC6D8C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2696. Minimum String Length After Removing Substrings", "Problems\2696. Minimum String Length After Removing Substrings\2696. Minimum String Length After Removing Substrings.csproj", "{ED9A327F-C0AE-431D-B8B2-65F62110DEE7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2696. Minimum String Length After Removing Substrings", "Problems\2696. Minimum String Length After Removing Substrings\2696. Minimum String Length After Removing Substrings.csproj", "{ED9A327F-C0AE-431D-B8B2-65F62110DEE7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
