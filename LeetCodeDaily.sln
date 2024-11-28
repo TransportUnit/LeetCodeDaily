@@ -83,6 +83,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "883. Projection Area of 3D 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2287. Rearrange Characters to Make Target String", "Problems\2287. Rearrange Characters to Make Target String\2287. Rearrange Characters to Make Target String.csproj", "{CE5D6AC4-F110-4413-B28A-321A81630EA7}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2283. Check if Number Has Equal Digit Count and Digit Value", "Problems\2283. Check if Number Has Equal Digit Count and Digit Value\2283. Check if Number Has Equal Digit Count and Digit Value.csproj", "{420D7771-925E-46C9-9346-6F0295214A81}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -245,6 +247,10 @@ Global
 		{CE5D6AC4-F110-4413-B28A-321A81630EA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CE5D6AC4-F110-4413-B28A-321A81630EA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CE5D6AC4-F110-4413-B28A-321A81630EA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{420D7771-925E-46C9-9346-6F0295214A81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{420D7771-925E-46C9-9346-6F0295214A81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{420D7771-925E-46C9-9346-6F0295214A81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{420D7771-925E-46C9-9346-6F0295214A81}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -288,6 +294,7 @@ Global
 		{57090BEC-FFEC-45D9-9BD7-401CB8AE4180} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 		{A72088BF-4E97-49A8-B766-6A9930107F8D} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 		{CE5D6AC4-F110-4413-B28A-321A81630EA7} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
+		{420D7771-925E-46C9-9346-6F0295214A81} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4AA608D7-351A-4872-A7C1-0E41362A6953}
