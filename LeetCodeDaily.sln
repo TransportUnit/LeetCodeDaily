@@ -87,6 +87,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2283. Check if Number Has E
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2574. Left and Right Sum Differences", "Problems\2574. Left and Right Sum Differences\2574. Left and Right Sum Differences.csproj", "{AE882EDE-B65D-4568-9645-2A699E92ACBF}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1455. Check If a Word Occurs As a Prefix of Any Word in a Sentence", "Problems\1455. Check If a Word Occurs As a Prefix of Any Word in a Sentence\1455. Check If a Word Occurs As a Prefix of Any Word in a Sentence.csproj", "{7AF9E97B-6447-4A55-A9DB-C2BC54A9A418}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -257,6 +259,10 @@ Global
 		{AE882EDE-B65D-4568-9645-2A699E92ACBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE882EDE-B65D-4568-9645-2A699E92ACBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE882EDE-B65D-4568-9645-2A699E92ACBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AF9E97B-6447-4A55-A9DB-C2BC54A9A418}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AF9E97B-6447-4A55-A9DB-C2BC54A9A418}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AF9E97B-6447-4A55-A9DB-C2BC54A9A418}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AF9E97B-6447-4A55-A9DB-C2BC54A9A418}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -302,6 +308,7 @@ Global
 		{CE5D6AC4-F110-4413-B28A-321A81630EA7} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 		{420D7771-925E-46C9-9346-6F0295214A81} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 		{AE882EDE-B65D-4568-9645-2A699E92ACBF} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
+		{7AF9E97B-6447-4A55-A9DB-C2BC54A9A418} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4AA608D7-351A-4872-A7C1-0E41362A6953}

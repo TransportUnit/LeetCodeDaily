@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+	<RootNamespace>_1455.Check_If_a_Word_Occurs_As_a_Prefix_of_Any_Word_in_a_Sentence</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\LeetCodeDaily\LeetCodeDaily.csproj" />
+  </ItemGroup>
+
+</Project>
