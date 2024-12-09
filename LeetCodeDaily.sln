@@ -97,6 +97,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "232. Implement Queue using 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "231. Power of Two", "Problems\231. Power of Two\231. Power of Two.csproj", "{826222F9-D51E-4F50-9882-A3F49950862A}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3152. Special Array II", "Problems\3152. Special Array II\3152. Special Array II.csproj", "{FE641DED-CE5A-450A-A44B-72DBF04E285A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -287,6 +289,10 @@ Global
 		{826222F9-D51E-4F50-9882-A3F49950862A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{826222F9-D51E-4F50-9882-A3F49950862A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{826222F9-D51E-4F50-9882-A3F49950862A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE641DED-CE5A-450A-A44B-72DBF04E285A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE641DED-CE5A-450A-A44B-72DBF04E285A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE641DED-CE5A-450A-A44B-72DBF04E285A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE641DED-CE5A-450A-A44B-72DBF04E285A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -337,6 +343,7 @@ Global
 		{0B179637-F8F1-45AB-AD8B-AFD00CC485DE} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 		{D6885E9F-7C4C-43F3-BDD5-FE3E2721C802} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 		{826222F9-D51E-4F50-9882-A3F49950862A} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
+		{FE641DED-CE5A-450A-A44B-72DBF04E285A} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4AA608D7-351A-4872-A7C1-0E41362A6953}
