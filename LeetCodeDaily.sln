@@ -101,6 +101,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3152. Special Array II", "P
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2779. Maximum Beauty of an Array After Applying Operation", "Problems\2779. Maximum Beauty of an Array After Applying Operation\2779. Maximum Beauty of an Array After Applying Operation.csproj", "{19F8BD0D-443F-4CCC-A72C-1084F8F5E04E}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2558. Take Gifts From the Richest Pile", "Problems\2558. Take Gifts From the Richest Pile\2558. Take Gifts From the Richest Pile.csproj", "{0CD9C85F-2140-4B86-9FBE-1274CD430520}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -299,6 +301,10 @@ Global
 		{19F8BD0D-443F-4CCC-A72C-1084F8F5E04E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19F8BD0D-443F-4CCC-A72C-1084F8F5E04E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{19F8BD0D-443F-4CCC-A72C-1084F8F5E04E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CD9C85F-2140-4B86-9FBE-1274CD430520}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CD9C85F-2140-4B86-9FBE-1274CD430520}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CD9C85F-2140-4B86-9FBE-1274CD430520}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CD9C85F-2140-4B86-9FBE-1274CD430520}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -351,6 +357,7 @@ Global
 		{826222F9-D51E-4F50-9882-A3F49950862A} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 		{FE641DED-CE5A-450A-A44B-72DBF04E285A} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 		{19F8BD0D-443F-4CCC-A72C-1084F8F5E04E} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
+		{0CD9C85F-2140-4B86-9FBE-1274CD430520} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4AA608D7-351A-4872-A7C1-0E41362A6953}
