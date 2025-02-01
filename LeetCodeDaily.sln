@@ -111,6 +111,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "374. Guess Number Higher or
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2578. Split With Minimum Sum", "Problems\2578. Split With Minimum Sum\2578. Split With Minimum Sum.csproj", "{D2CAC480-5DBF-43BE-8CD8-C6FF263BD684}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "125. Valid Palindrome", "Problems\125. Valid Palindrome\125. Valid Palindrome.csproj", "{6313229F-4D85-428C-9E70-5DE737BBF84B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -329,6 +331,10 @@ Global
 		{D2CAC480-5DBF-43BE-8CD8-C6FF263BD684}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D2CAC480-5DBF-43BE-8CD8-C6FF263BD684}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D2CAC480-5DBF-43BE-8CD8-C6FF263BD684}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6313229F-4D85-428C-9E70-5DE737BBF84B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6313229F-4D85-428C-9E70-5DE737BBF84B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6313229F-4D85-428C-9E70-5DE737BBF84B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6313229F-4D85-428C-9E70-5DE737BBF84B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -386,6 +392,7 @@ Global
 		{26773D48-7219-4534-AD75-C01E094CB336} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 		{A0D15535-5B16-4504-AEA8-D7463DE34D27} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 		{D2CAC480-5DBF-43BE-8CD8-C6FF263BD684} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
+		{6313229F-4D85-428C-9E70-5DE737BBF84B} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4AA608D7-351A-4872-A7C1-0E41362A6953}
