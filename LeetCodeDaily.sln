@@ -115,6 +115,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "125. Valid Palindrome", "Pr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "202. Happy Number", "Problems\202. Happy Number\202. Happy Number.csproj", "{164EAEE9-78C5-4300-AB53-3208889F7BE1}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "242. Valid Anagram", "242. Valid Anagram\242. Valid Anagram.csproj", "{4423269A-714E-4FAC-A15A-072093B4362D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -341,6 +343,10 @@ Global
 		{164EAEE9-78C5-4300-AB53-3208889F7BE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{164EAEE9-78C5-4300-AB53-3208889F7BE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{164EAEE9-78C5-4300-AB53-3208889F7BE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4423269A-714E-4FAC-A15A-072093B4362D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4423269A-714E-4FAC-A15A-072093B4362D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4423269A-714E-4FAC-A15A-072093B4362D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4423269A-714E-4FAC-A15A-072093B4362D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -400,6 +406,7 @@ Global
 		{D2CAC480-5DBF-43BE-8CD8-C6FF263BD684} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 		{6313229F-4D85-428C-9E70-5DE737BBF84B} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 		{164EAEE9-78C5-4300-AB53-3208889F7BE1} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
+		{4423269A-714E-4FAC-A15A-072093B4362D} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4AA608D7-351A-4872-A7C1-0E41362A6953}
