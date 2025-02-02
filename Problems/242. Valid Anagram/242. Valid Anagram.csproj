@@ -10,7 +10,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\LeetCodeDaily\LeetCodeDaily.csproj" />
+    <ProjectReference Include="..\..\LeetCodeDaily\LeetCodeDaily.csproj" />
   </ItemGroup>
 
 </Project>

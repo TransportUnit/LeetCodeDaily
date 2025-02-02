@@ -115,7 +115,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "125. Valid Palindrome", "Pr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "202. Happy Number", "Problems\202. Happy Number\202. Happy Number.csproj", "{164EAEE9-78C5-4300-AB53-3208889F7BE1}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "242. Valid Anagram", "242. Valid Anagram\242. Valid Anagram.csproj", "{4423269A-714E-4FAC-A15A-072093B4362D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "242. Valid Anagram", "Problems\242. Valid Anagram\242. Valid Anagram.csproj", "{4423269A-714E-4FAC-A15A-072093B4362D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
