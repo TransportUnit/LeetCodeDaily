@@ -16,10 +16,10 @@ Return `true` _if_ `n` _is a happy number, and_ `false` _if not_.
 - **Input:** n = 19
 - **Output:** true
 - **Explanation:**
-  - 12 + 92 = 82
-  - 82 + 22 = 68
-  - 62 + 82 = 100
-  - 12 + 02 + 02 = 1
+  - 1<sup>2</sup> + 9<sup>2</sup> = 82
+  - 8<sup>2</sup> + 2<sup>2</sup> = 68
+  - 6<sup>2</sup> + 8<sup>2</sup> = 100
+  - 1<sup>2</sup> + 0<sup>2</sup> + 0<sup>2</sup> = 1
 
 **Example 2:**
 - **Input:** n = 2
