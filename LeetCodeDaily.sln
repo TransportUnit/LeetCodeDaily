@@ -119,6 +119,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "242. Valid Anagram", "Probl
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1922. Count Good Numbers", "Problems\1922. Count Good Numbers\1922. Count Good Numbers.csproj", "{5F9D3531-8842-4F43-ADC3-0B0962228833}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3375. Minimum Operations to Make Array Values Equal to K", "Problems\3375. Minimum Operations to Make Array Values Equal to K\3375. Minimum Operations to Make Array Values Equal to K.csproj", "{A39BE273-0ED6-4130-BF23-C6B2A3266EF1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -353,6 +355,10 @@ Global
 		{5F9D3531-8842-4F43-ADC3-0B0962228833}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F9D3531-8842-4F43-ADC3-0B0962228833}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F9D3531-8842-4F43-ADC3-0B0962228833}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A39BE273-0ED6-4130-BF23-C6B2A3266EF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A39BE273-0ED6-4130-BF23-C6B2A3266EF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A39BE273-0ED6-4130-BF23-C6B2A3266EF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A39BE273-0ED6-4130-BF23-C6B2A3266EF1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -414,6 +420,7 @@ Global
 		{164EAEE9-78C5-4300-AB53-3208889F7BE1} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 		{4423269A-714E-4FAC-A15A-072093B4362D} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 		{5F9D3531-8842-4F43-ADC3-0B0962228833} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
+		{A39BE273-0ED6-4130-BF23-C6B2A3266EF1} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4AA608D7-351A-4872-A7C1-0E41362A6953}
