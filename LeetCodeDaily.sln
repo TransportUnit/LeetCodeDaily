@@ -137,6 +137,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1534. Count Good Triplets",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3024. Type of Triangle", "Problems\3024. Type of Triangle\3024. Type of Triangle.csproj", "{61F80C94-274B-4EE1-BC49-D52C1962458F}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3355. Zero Array Transformation I", "Problems\3355. Zero Array Transformation I\3355. Zero Array Transformation I.csproj", "{F6BD0FCC-FD5F-4349-821A-5A814A175981}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -407,6 +409,10 @@ Global
 		{61F80C94-274B-4EE1-BC49-D52C1962458F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{61F80C94-274B-4EE1-BC49-D52C1962458F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{61F80C94-274B-4EE1-BC49-D52C1962458F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6BD0FCC-FD5F-4349-821A-5A814A175981}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6BD0FCC-FD5F-4349-821A-5A814A175981}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6BD0FCC-FD5F-4349-821A-5A814A175981}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6BD0FCC-FD5F-4349-821A-5A814A175981}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -477,6 +483,7 @@ Global
 		{F05B7C33-5EB4-4601-A496-69C39A946945} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 		{615B6515-FFA9-443F-BAC0-DEA1163C4B34} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 		{61F80C94-274B-4EE1-BC49-D52C1962458F} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
+		{F6BD0FCC-FD5F-4349-821A-5A814A175981} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4AA608D7-351A-4872-A7C1-0E41362A6953}
