@@ -125,6 +125,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1920. Build Array from Perm
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2900. Longest Unequal Adjacent Groups Subsequence I", "Problems\2900. Longest Unequal Adjacent Groups Subsequence I\2900. Longest Unequal Adjacent Groups Subsequence I.csproj", "{1D4E2F34-5428-45A2-9E4D-C2BA59EC025B}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "263. Ugly Number", "Problems\263. Ugly Number\263. Ugly Number.csproj", "{0291FB11-2D10-4899-8F9A-7B968E72F916}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -371,6 +373,10 @@ Global
 		{1D4E2F34-5428-45A2-9E4D-C2BA59EC025B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1D4E2F34-5428-45A2-9E4D-C2BA59EC025B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1D4E2F34-5428-45A2-9E4D-C2BA59EC025B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0291FB11-2D10-4899-8F9A-7B968E72F916}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0291FB11-2D10-4899-8F9A-7B968E72F916}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0291FB11-2D10-4899-8F9A-7B968E72F916}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0291FB11-2D10-4899-8F9A-7B968E72F916}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -435,6 +441,7 @@ Global
 		{A39BE273-0ED6-4130-BF23-C6B2A3266EF1} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 		{03460108-FF8E-40A4-90C0-470405700A50} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 		{1D4E2F34-5428-45A2-9E4D-C2BA59EC025B} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
+		{0291FB11-2D10-4899-8F9A-7B968E72F916} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4AA608D7-351A-4872-A7C1-0E41362A6953}
