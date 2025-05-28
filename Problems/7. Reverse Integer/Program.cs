@@ -1,0 +1,29 @@
+﻿using LeetCodeDaily.Core;
+
+Case
+    .CreateCase(
+        -1463847412,
+        -2147483641)
+    .CreateCase(
+        -123,
+        -321)
+    .CreateCase(
+        120,
+        21)
+    .CreateCase(
+        2147483647,
+        0)
+    .CreateCase(
+        -2147483648,
+        0)
+    .CreateCase(
+        -1,
+        -1)
+    .CreateCase(
+        1534236469,
+        0)
+    .CreateCase(
+        1563847412,
+        0)
+    .Detect()
+    .Run();

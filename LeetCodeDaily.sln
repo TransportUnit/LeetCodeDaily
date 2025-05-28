@@ -145,6 +145,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3. Longest Substring Withou
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "6. Zigzag Conversion", "Problems\6. Zigzag Conversion\6. Zigzag Conversion.csproj", "{B2CA7655-81C1-487F-8C03-FB6CD407F971}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "7. Reverse Integer", "Problems\7. Reverse Integer\7. Reverse Integer.csproj", "{E3C8BD83-A476-46E1-89CC-B0C8817ABA22}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -431,6 +433,10 @@ Global
 		{B2CA7655-81C1-487F-8C03-FB6CD407F971}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B2CA7655-81C1-487F-8C03-FB6CD407F971}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B2CA7655-81C1-487F-8C03-FB6CD407F971}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3C8BD83-A476-46E1-89CC-B0C8817ABA22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3C8BD83-A476-46E1-89CC-B0C8817ABA22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3C8BD83-A476-46E1-89CC-B0C8817ABA22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3C8BD83-A476-46E1-89CC-B0C8817ABA22}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -505,6 +511,7 @@ Global
 		{CB85AC92-6616-4299-8E2F-52543EC94190} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 		{BD98A26E-7CA2-43A2-9D8F-28C11D2A0FA5} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 		{B2CA7655-81C1-487F-8C03-FB6CD407F971} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
+		{E3C8BD83-A476-46E1-89CC-B0C8817ABA22} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4AA608D7-351A-4872-A7C1-0E41362A6953}
