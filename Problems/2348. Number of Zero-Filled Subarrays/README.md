@@ -1,4 +1,4 @@
-# Problem Title
+# 2348. Number of Zero-Filled Subarrays
 
 Given an integer array `nums`, return _the number of **subarrays** filled with_ `0`.
 
