@@ -159,6 +159,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2586. Count the Number of V
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2221. Find Triangular Sum of an Array", "Problems\2221. Find Triangular Sum of an Array\2221. Find Triangular Sum of an Array.csproj", "{B0085037-DD96-48E4-8DAB-20F8A6C7AD22}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "417. Pacific Atlantic Water Flow", "Problems\417. Pacific Atlantic Water Flow\417. Pacific Atlantic Water Flow.csproj", "{A91C1C89-2D9C-4ED0-ACF5-972E0E3E94E2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -469,6 +471,10 @@ Global
 		{B0085037-DD96-48E4-8DAB-20F8A6C7AD22}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B0085037-DD96-48E4-8DAB-20F8A6C7AD22}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B0085037-DD96-48E4-8DAB-20F8A6C7AD22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A91C1C89-2D9C-4ED0-ACF5-972E0E3E94E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A91C1C89-2D9C-4ED0-ACF5-972E0E3E94E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A91C1C89-2D9C-4ED0-ACF5-972E0E3E94E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A91C1C89-2D9C-4ED0-ACF5-972E0E3E94E2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -549,6 +555,7 @@ Global
 		{D32F713D-B111-4398-8CE2-F2A3C4542F16} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 		{D0F41569-71B3-4DED-8B33-1580178D9FDB} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 		{B0085037-DD96-48E4-8DAB-20F8A6C7AD22} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
+		{A91C1C89-2D9C-4ED0-ACF5-972E0E3E94E2} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4AA608D7-351A-4872-A7C1-0E41362A6953}
