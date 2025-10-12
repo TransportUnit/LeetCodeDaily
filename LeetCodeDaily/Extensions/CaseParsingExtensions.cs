@@ -1,4 +1,6 @@
 ﻿using LeetCodeDaily.Core;
+using System.Globalization;
+using System.Reflection;
 using System.Text.RegularExpressions;
 
 namespace LeetCodeDaily.Extensions;
@@ -64,6 +66,23 @@ public static class CaseParsingExtensions
         {
             var elemType = targetType.GetElementType()!;
 
+            if (elemType.IsArray)
+            {
+                var castMethod = 
+                    typeof(Extensions)
+                    .GetMethods(BindingFlags.Public | BindingFlags.Static)
+                    .First(m => m.IsGenericMethod && m.Name == nameof(Extensions.ParseMatrix))
+                    .MakeGenericMethod(elemType.GetElementType()!);
+
+                //var parameters = castMethod.GetParameters();
+
+                //var args = new List<object>(parameters.Length);
+
+
+
+                return castMethod.Invoke(null, new object[] { line, Type.Missing, Type.Missing })!;
+            }
+
             // Spezialfall: string[]
             if (elemType == typeof(string))
             {
@@ -77,13 +96,13 @@ public static class CaseParsingExtensions
             var rawValues = line
                 .Trim('[', ']')
                 .Split(new[] { ',' }, StringSplitOptions.RemoveEmptyEntries)
-                .Select(s => Convert.ChangeType(s.Trim(), elemType))
+                .Select(s => Convert.ChangeType(s.Trim(), elemType, CultureInfo.InvariantCulture))
                 .ToArray();
 
             return rawValues.ToArrayOfType(elemType);
         }
 
-        return Convert.ChangeType(line, targetType);
+        return Convert.ChangeType(line, targetType, CultureInfo.InvariantCulture);
     }
 
     private static Array ToArrayOfType(this IEnumerable<object> source, Type elementType)
