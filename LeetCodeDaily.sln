@@ -169,6 +169,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "812. Largest Triangle Area"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2598. Smallest Missing Non-negative Integer After Operations", "Problems\2598. Smallest Missing Non-negative Integer After Operations\2598. Smallest Missing Non-negative Integer After Operations.csproj", "{13F0BDC9-E955-47DA-B977-D6B2EBBC257B}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3370. Smallest Number With All Set Bits", "Problems\3370. Smallest Number With All Set Bits\3370. Smallest Number With All Set Bits.csproj", "{7033BC69-154A-49CF-A607-C9AD9BE22C78}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -499,6 +501,10 @@ Global
 		{13F0BDC9-E955-47DA-B977-D6B2EBBC257B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{13F0BDC9-E955-47DA-B977-D6B2EBBC257B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{13F0BDC9-E955-47DA-B977-D6B2EBBC257B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7033BC69-154A-49CF-A607-C9AD9BE22C78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7033BC69-154A-49CF-A607-C9AD9BE22C78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7033BC69-154A-49CF-A607-C9AD9BE22C78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7033BC69-154A-49CF-A607-C9AD9BE22C78}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -584,6 +590,7 @@ Global
 		{5A725667-6CE6-4994-A547-584213B457B8} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 		{20DD9A2C-59EA-441E-8606-E4D2A382B07C} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 		{13F0BDC9-E955-47DA-B977-D6B2EBBC257B} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
+		{7033BC69-154A-49CF-A607-C9AD9BE22C78} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4AA608D7-351A-4872-A7C1-0E41362A6953}
