@@ -1,8 +1,6 @@
 ﻿using LeetCodeDaily.Core;
 using LeetCodeDaily.Extensions;
 
-ResultGeneratorAttribute.Detect();
-
 Case
     .CreateCase(
         ("[1,2,3]".ParseArray<int>(), ListNode.Parse("[1,2,3,4,5]")),
@@ -20,4 +18,7 @@ Case
     {
         return c.ActualResult!.ToString().Equals(c.ExpectedResult!.ToString());
     })
+    .Detect()
+    .Run()
+    .Detect(1)
     .Run();

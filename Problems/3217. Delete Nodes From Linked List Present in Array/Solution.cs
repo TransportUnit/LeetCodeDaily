@@ -46,4 +46,34 @@ public class Solution
 
         return head;
     }
+
+    [ResultGenerator(ApproachIndex = 1)]
+    public ListNode ModifiedListOptimised(int[] nums, ListNode head)
+    {
+        Span<bool> set = stackalloc bool[100_001];
+
+        foreach (var n in nums) set[n] = true;
+
+        while (set[head!.val])
+        {
+            head = head.next!;
+        }
+
+        var current = head;
+
+        while (current.next != null)
+        {
+            if (set[current.next.val])
+            {
+                current.next = current.next.next;
+            }
+            else
+            {
+                current = current.next;
+            }
+
+        }
+
+        return head;
+    }
 }
