@@ -173,6 +173,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3370. Smallest Number With 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2169. Count Operations to Obtain Zero", "Problems\2169. Count Operations to Obtain Zero\2169. Count Operations to Obtain Zero.csproj", "{C9BA35FC-1D21-410D-AE4C-314A6570C640}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3228. Maximum Number of Operations to Move Ones to the End", "Problems\3228. Maximum Number of Operations to Move Ones to the End\3228. Maximum Number of Operations to Move Ones to the End.csproj", "{A6108079-BEB7-4E0E-B8FA-EA55B9548C42}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -511,6 +513,10 @@ Global
 		{C9BA35FC-1D21-410D-AE4C-314A6570C640}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C9BA35FC-1D21-410D-AE4C-314A6570C640}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C9BA35FC-1D21-410D-AE4C-314A6570C640}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6108079-BEB7-4E0E-B8FA-EA55B9548C42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6108079-BEB7-4E0E-B8FA-EA55B9548C42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6108079-BEB7-4E0E-B8FA-EA55B9548C42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6108079-BEB7-4E0E-B8FA-EA55B9548C42}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -598,6 +604,7 @@ Global
 		{13F0BDC9-E955-47DA-B977-D6B2EBBC257B} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 		{7033BC69-154A-49CF-A607-C9AD9BE22C78} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 		{C9BA35FC-1D21-410D-AE4C-314A6570C640} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
+		{A6108079-BEB7-4E0E-B8FA-EA55B9548C42} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4AA608D7-351A-4872-A7C1-0E41362A6953}
