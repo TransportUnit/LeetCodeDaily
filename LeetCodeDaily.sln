@@ -185,6 +185,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3190. Find Minimum Operatio
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1018. Binary Prefix Divisible By 5", "Problems\1018. Binary Prefix Divisible By 5\1018. Binary Prefix Divisible By 5.csproj", "{B6B4435E-C999-465A-AC14-91F7B2471367}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1262. Greatest Sum Divisible by Three", "Problems\1262. Greatest Sum Divisible by Three\1262. Greatest Sum Divisible by Three.csproj", "{284C0507-21FA-41B4-9B55-E8041562F479}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -547,6 +549,10 @@ Global
 		{B6B4435E-C999-465A-AC14-91F7B2471367}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B6B4435E-C999-465A-AC14-91F7B2471367}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B6B4435E-C999-465A-AC14-91F7B2471367}.Release|Any CPU.Build.0 = Release|Any CPU
+		{284C0507-21FA-41B4-9B55-E8041562F479}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{284C0507-21FA-41B4-9B55-E8041562F479}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{284C0507-21FA-41B4-9B55-E8041562F479}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{284C0507-21FA-41B4-9B55-E8041562F479}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -640,6 +646,7 @@ Global
 		{4FB414FA-AF2A-4FDE-B669-8159F2FBE9A1} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 		{CB9693B4-5DF6-47F5-AAAB-CACBFC60F660} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 		{B6B4435E-C999-465A-AC14-91F7B2471367} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
+		{284C0507-21FA-41B4-9B55-E8041562F479} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4AA608D7-351A-4872-A7C1-0E41362A6953}
