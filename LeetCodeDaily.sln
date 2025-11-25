@@ -189,6 +189,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1262. Greatest Sum Divisibl
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "69. Sqrt(x)", "Problems\69. Sqrt(x)\69. Sqrt(x).csproj", "{DD63DF7E-D701-494F-A1CE-FF261E795547}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1015. Smallest Integer Divisible by K", "Problems\1015. Smallest Integer Divisible by K\1015. Smallest Integer Divisible by K.csproj", "{CA279729-3B8D-424C-B90A-ADC4D2B15EFF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -559,6 +561,10 @@ Global
 		{DD63DF7E-D701-494F-A1CE-FF261E795547}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD63DF7E-D701-494F-A1CE-FF261E795547}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DD63DF7E-D701-494F-A1CE-FF261E795547}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA279729-3B8D-424C-B90A-ADC4D2B15EFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA279729-3B8D-424C-B90A-ADC4D2B15EFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA279729-3B8D-424C-B90A-ADC4D2B15EFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA279729-3B8D-424C-B90A-ADC4D2B15EFF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -654,6 +660,7 @@ Global
 		{B6B4435E-C999-465A-AC14-91F7B2471367} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 		{284C0507-21FA-41B4-9B55-E8041562F479} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 		{DD63DF7E-D701-494F-A1CE-FF261E795547} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
+		{CA279729-3B8D-424C-B90A-ADC4D2B15EFF} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4AA608D7-351A-4872-A7C1-0E41362A6953}
