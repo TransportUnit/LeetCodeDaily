@@ -183,6 +183,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2154. Keep Multiplying Foun
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3190. Find Minimum Operations to Make All Elements Divisible by Three", "Problems\3190. Find Minimum Operations to Make All Elements Divisible by Three\3190. Find Minimum Operations to Make All Elements Divisible by Three.csproj", "{CB9693B4-5DF6-47F5-AAAB-CACBFC60F660}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3512. Minimum Operations to Make Array Sum Divisible by K", "Problems\3512. Minimum Operations to Make Array Sum Divisible by K\3512. Minimum Operations to Make Array Sum Divisible by K.csproj", "{700D1BEA-98A3-4E2A-B8E3-1DAC97688D9E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -541,6 +543,10 @@ Global
 		{CB9693B4-5DF6-47F5-AAAB-CACBFC60F660}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CB9693B4-5DF6-47F5-AAAB-CACBFC60F660}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CB9693B4-5DF6-47F5-AAAB-CACBFC60F660}.Release|Any CPU.Build.0 = Release|Any CPU
+		{700D1BEA-98A3-4E2A-B8E3-1DAC97688D9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{700D1BEA-98A3-4E2A-B8E3-1DAC97688D9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{700D1BEA-98A3-4E2A-B8E3-1DAC97688D9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{700D1BEA-98A3-4E2A-B8E3-1DAC97688D9E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -633,6 +639,7 @@ Global
 		{529DC214-E40E-496D-A9A0-877BF92F96FE} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 		{4FB414FA-AF2A-4FDE-B669-8159F2FBE9A1} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 		{CB9693B4-5DF6-47F5-AAAB-CACBFC60F660} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
+		{700D1BEA-98A3-4E2A-B8E3-1DAC97688D9E} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4AA608D7-351A-4872-A7C1-0E41362A6953}
