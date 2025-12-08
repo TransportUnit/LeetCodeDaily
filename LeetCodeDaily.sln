@@ -199,6 +199,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "94. Binary Tree Inorder Tra
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1523. Count Odd Numbers in an Interval Range", "Problems\1523. Count Odd Numbers in an Interval Range\1523. Count Odd Numbers in an Interval Range.csproj", "{EBA37B3A-3DA2-451D-BBA8-33FD9FE96BD3}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1925. Count Square Sum Triples", "Problems\1925. Count Square Sum Triples\1925. Count Square Sum Triples.csproj", "{2E5EBDE6-8BFD-40F9-A7E4-A3E6A423FC94}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -589,6 +591,10 @@ Global
 		{EBA37B3A-3DA2-451D-BBA8-33FD9FE96BD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EBA37B3A-3DA2-451D-BBA8-33FD9FE96BD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EBA37B3A-3DA2-451D-BBA8-33FD9FE96BD3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E5EBDE6-8BFD-40F9-A7E4-A3E6A423FC94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E5EBDE6-8BFD-40F9-A7E4-A3E6A423FC94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E5EBDE6-8BFD-40F9-A7E4-A3E6A423FC94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E5EBDE6-8BFD-40F9-A7E4-A3E6A423FC94}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -689,6 +695,7 @@ Global
 		{700D1BEA-98A3-4E2A-B8E3-1DAC97688D9E} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 		{627CF44D-2BEA-492F-B7F7-842BC43A9D50} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 		{EBA37B3A-3DA2-451D-BBA8-33FD9FE96BD3} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
+		{2E5EBDE6-8BFD-40F9-A7E4-A3E6A423FC94} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4AA608D7-351A-4872-A7C1-0E41362A6953}
