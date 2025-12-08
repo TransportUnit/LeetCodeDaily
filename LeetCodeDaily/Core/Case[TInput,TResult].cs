@@ -157,4 +157,9 @@ public class Case<TInput, TResult>
         ResultGeneratorAttribute.Detect(approachIndex);
         return this;
     }
+
+    public Case<TInput, TResult> DetectAndRun(int approachIndex = 0, bool printResult = true)
+    {
+        return Detect(approachIndex).Run(printResult);
+    }
 }
