@@ -205,6 +205,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3432. Count Partitions with
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3583. Count Special Triplets", "PRoblems\3583. Count Special Triplets\3583. Count Special Triplets.csproj", "{48A42373-04D9-41D7-99AC-6023C3C23CDC}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3577. Count the Number of Computer Unlocking Permutations", "Problems\3577. Count the Number of Computer Unlocking Permutations\3577. Count the Number of Computer Unlocking Permutations.csproj", "{28B37ED1-1227-481B-AFE8-D2334514B6D0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -607,6 +609,10 @@ Global
 		{48A42373-04D9-41D7-99AC-6023C3C23CDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{48A42373-04D9-41D7-99AC-6023C3C23CDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{48A42373-04D9-41D7-99AC-6023C3C23CDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28B37ED1-1227-481B-AFE8-D2334514B6D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28B37ED1-1227-481B-AFE8-D2334514B6D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28B37ED1-1227-481B-AFE8-D2334514B6D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28B37ED1-1227-481B-AFE8-D2334514B6D0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -710,6 +716,7 @@ Global
 		{2E5EBDE6-8BFD-40F9-A7E4-A3E6A423FC94} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 		{DB375FB0-752F-4A5D-B000-E441EE252105} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 		{48A42373-04D9-41D7-99AC-6023C3C23CDC} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
+		{28B37ED1-1227-481B-AFE8-D2334514B6D0} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4AA608D7-351A-4872-A7C1-0E41362A6953}
