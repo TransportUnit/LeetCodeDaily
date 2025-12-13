@@ -213,6 +213,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "37. Sudoku Solver", "Proble
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3433. Count Mentions Per User", "Problems\3433. Count Mentions Per User\3433. Count Mentions Per User.csproj", "{E175748A-70A5-46ED-80BE-A0B89D780D18}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3606. Coupon Code Validator", "Problems\3606. Coupon Code Validator\3606. Coupon Code Validator.csproj", "{9EA25BD1-0DF5-485B-BBD6-36BAFE7BBBA4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -631,6 +633,10 @@ Global
 		{E175748A-70A5-46ED-80BE-A0B89D780D18}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E175748A-70A5-46ED-80BE-A0B89D780D18}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E175748A-70A5-46ED-80BE-A0B89D780D18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EA25BD1-0DF5-485B-BBD6-36BAFE7BBBA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EA25BD1-0DF5-485B-BBD6-36BAFE7BBBA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EA25BD1-0DF5-485B-BBD6-36BAFE7BBBA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EA25BD1-0DF5-485B-BBD6-36BAFE7BBBA4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -738,6 +744,7 @@ Global
 		{944491C4-B3A3-4961-A8DD-1E686A34AE28} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 		{1B8D6F2A-ADAC-4DAD-B335-76E5FBBAED80} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 		{E175748A-70A5-46ED-80BE-A0B89D780D18} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
+		{9EA25BD1-0DF5-485B-BBD6-36BAFE7BBBA4} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4AA608D7-351A-4872-A7C1-0E41362A6953}
