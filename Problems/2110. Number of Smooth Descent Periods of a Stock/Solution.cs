@@ -33,4 +33,10 @@ public class Solution
 
         return periods;
     }
+
+    [ResultGenerator(ApproachIndex = 1)]
+    public long GetDescentPeriodsLinqOneLiner(int[] prices)
+    {
+        return prices.Select((x, i) => (x, i)).Skip(1).Aggregate(0L, (a, i) => { prices[0] = i.x == prices[i.i - 1] - 1 ? (i.i == 1 ? 1 : prices[0]) + 1 : 1; return a + prices[0]; }, (c) => (c + 1));
+    }
 }
