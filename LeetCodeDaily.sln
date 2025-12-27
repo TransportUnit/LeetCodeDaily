@@ -221,6 +221,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2147. Number of Ways to Div
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2110. Number of Smooth Descent Periods of a Stock", "Problems\2110. Number of Smooth Descent Periods of a Stock\2110. Number of Smooth Descent Periods of a Stock.csproj", "{C2B04DFB-8997-45FB-B698-97268C95C0EA}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2483. Minimum Penalty for a Shop", "Problems\2483. Minimum Penalty for a Shop\2483. Minimum Penalty for a Shop.csproj", "{31225238-B8BA-48AC-AD4B-E14C4171C4A3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -655,6 +657,10 @@ Global
 		{C2B04DFB-8997-45FB-B698-97268C95C0EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C2B04DFB-8997-45FB-B698-97268C95C0EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C2B04DFB-8997-45FB-B698-97268C95C0EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31225238-B8BA-48AC-AD4B-E14C4171C4A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31225238-B8BA-48AC-AD4B-E14C4171C4A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31225238-B8BA-48AC-AD4B-E14C4171C4A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31225238-B8BA-48AC-AD4B-E14C4171C4A3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -766,6 +772,7 @@ Global
 		{9DAB1042-59FB-4335-944E-586CE977C2F2} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 		{3055341E-42D7-4CB5-B054-5F0DD271E6ED} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 		{C2B04DFB-8997-45FB-B698-97268C95C0EA} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
+		{31225238-B8BA-48AC-AD4B-E14C4171C4A3} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4AA608D7-351A-4872-A7C1-0E41362A6953}
