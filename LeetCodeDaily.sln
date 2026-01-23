@@ -235,6 +235,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1266. Minimum Time Visiting
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3453. Separate Squares I", "Problems\3453. Separate Squares I\3453. Separate Squares I.csproj", "{5A02EB24-8434-429F-A809-EF8D2F3C41F9}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3314. Construct the Minimum Bitwise Array I", "Problems\3314. Construct the Minimum Bitwise Array I\3314. Construct the Minimum Bitwise Array I.csproj", "{C097D661-3447-4B3A-B2D5-D6ED2E831AA9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -697,6 +699,10 @@ Global
 		{5A02EB24-8434-429F-A809-EF8D2F3C41F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A02EB24-8434-429F-A809-EF8D2F3C41F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A02EB24-8434-429F-A809-EF8D2F3C41F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C097D661-3447-4B3A-B2D5-D6ED2E831AA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C097D661-3447-4B3A-B2D5-D6ED2E831AA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C097D661-3447-4B3A-B2D5-D6ED2E831AA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C097D661-3447-4B3A-B2D5-D6ED2E831AA9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -815,6 +821,7 @@ Global
 		{1680A1C1-095C-42C4-A1C5-C6B06C7661C9} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 		{1BBF03EB-AEB1-4FB1-996D-C2F47943F1CC} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 		{5A02EB24-8434-429F-A809-EF8D2F3C41F9} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
+		{C097D661-3447-4B3A-B2D5-D6ED2E831AA9} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4AA608D7-351A-4872-A7C1-0E41362A6953}
