@@ -239,6 +239,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3314. Construct the Minimum
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3010. Divide an Array Into Subarrays With Minimum Cost I", "Problems\3010. Divide an Array Into Subarrays With Minimum Cost I\3010. Divide an Array Into Subarrays With Minimum Cost I.csproj", "{6C63D7A4-3C7F-4075-8C36-39900E5A56BF}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "744. Find Smallest Letter Greater Than Target", "Problems\744. Find Smallest Letter Greater Than Target\744. Find Smallest Letter Greater Than Target.csproj", "{28EFC442-EC3D-4E2F-8C67-196ED24FAAB6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -709,6 +711,10 @@ Global
 		{6C63D7A4-3C7F-4075-8C36-39900E5A56BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6C63D7A4-3C7F-4075-8C36-39900E5A56BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6C63D7A4-3C7F-4075-8C36-39900E5A56BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28EFC442-EC3D-4E2F-8C67-196ED24FAAB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28EFC442-EC3D-4E2F-8C67-196ED24FAAB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28EFC442-EC3D-4E2F-8C67-196ED24FAAB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28EFC442-EC3D-4E2F-8C67-196ED24FAAB6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -829,6 +835,7 @@ Global
 		{5A02EB24-8434-429F-A809-EF8D2F3C41F9} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 		{C097D661-3447-4B3A-B2D5-D6ED2E831AA9} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 		{6C63D7A4-3C7F-4075-8C36-39900E5A56BF} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
+		{28EFC442-EC3D-4E2F-8C67-196ED24FAAB6} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4AA608D7-351A-4872-A7C1-0E41362A6953}
