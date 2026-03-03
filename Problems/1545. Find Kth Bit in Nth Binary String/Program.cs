@@ -39,4 +39,5 @@ using LeetCodeDaily.Extensions;
 1
 """
 .ParseCases<(int, int), char>()
-.DetectAndRun();
+.DetectAndRun()
+.DetectAndRun(1);
