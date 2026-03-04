@@ -249,6 +249,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1536. Minimum Swaps to Arra
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1545. Find Kth Bit in Nth Binary String", "Problems\1545. Find Kth Bit in Nth Binary String\1545. Find Kth Bit in Nth Binary String.csproj", "{10197F45-FD03-4E86-A1B1-3E4449C6D56E}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1582. Special Positions in a Binary Matrix", "Problems\1582. Special Positions in a Binary Matrix\1582. Special Positions in a Binary Matrix.csproj", "{146F07E5-68CC-4132-B549-F9280D72161E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -739,6 +741,10 @@ Global
 		{10197F45-FD03-4E86-A1B1-3E4449C6D56E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{10197F45-FD03-4E86-A1B1-3E4449C6D56E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{10197F45-FD03-4E86-A1B1-3E4449C6D56E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{146F07E5-68CC-4132-B549-F9280D72161E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{146F07E5-68CC-4132-B549-F9280D72161E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{146F07E5-68CC-4132-B549-F9280D72161E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{146F07E5-68CC-4132-B549-F9280D72161E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -864,6 +870,7 @@ Global
 		{AC2D2746-6CB6-4DE0-B80D-78D74D37B882} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 		{F537F542-AF5D-4A82-B924-1D5185A946FC} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 		{10197F45-FD03-4E86-A1B1-3E4449C6D56E} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
+		{146F07E5-68CC-4132-B549-F9280D72161E} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4AA608D7-351A-4872-A7C1-0E41362A6953}
