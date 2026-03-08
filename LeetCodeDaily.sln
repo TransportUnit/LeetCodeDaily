@@ -253,7 +253,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1582. Special Positions in 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1758. Minimum Changes To Make Alternating Binary String", "Problems\1758. Minimum Changes To Make Alternating Binary String\1758. Minimum Changes To Make Alternating Binary String.csproj", "{B4649E45-053F-4F3A-AB91-C8D0C1B9E646}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2432. The Employee That Worked on the Longest Task", "Problem\2432. The Employee That Worked on the Longest Task\2432. The Employee That Worked on the Longest Task.csproj", "{50560E92-546B-4C85-B5BC-B17B658AD655}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2432. The Employee That Worked on the Longest Task", "Problems\2432. The Employee That Worked on the Longest Task\2432. The Employee That Worked on the Longest Task.csproj", "{50560E92-546B-4C85-B5BC-B17B658AD655}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1888. Minimum Number of Flips to Make the Binary String Alternating", "Problems\1888. Minimum Number of Flips to Make the Binary String Alternating\1888. Minimum Number of Flips to Make the Binary String Alternating.csproj", "{A67B1BCC-A383-4BE6-8BD5-E9BE8A60C1AD}"
 EndProject
