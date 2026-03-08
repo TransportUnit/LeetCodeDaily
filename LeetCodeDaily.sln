@@ -255,6 +255,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1758. Minimum Changes To Ma
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2432. The Employee That Worked on the Longest Task", "Problem\2432. The Employee That Worked on the Longest Task\2432. The Employee That Worked on the Longest Task.csproj", "{50560E92-546B-4C85-B5BC-B17B658AD655}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1888. Minimum Number of Flips to Make the Binary String Alternating", "Problems\1888. Minimum Number of Flips to Make the Binary String Alternating\1888. Minimum Number of Flips to Make the Binary String Alternating.csproj", "{A67B1BCC-A383-4BE6-8BD5-E9BE8A60C1AD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -757,6 +759,10 @@ Global
 		{50560E92-546B-4C85-B5BC-B17B658AD655}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{50560E92-546B-4C85-B5BC-B17B658AD655}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{50560E92-546B-4C85-B5BC-B17B658AD655}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A67B1BCC-A383-4BE6-8BD5-E9BE8A60C1AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A67B1BCC-A383-4BE6-8BD5-E9BE8A60C1AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A67B1BCC-A383-4BE6-8BD5-E9BE8A60C1AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A67B1BCC-A383-4BE6-8BD5-E9BE8A60C1AD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -885,6 +891,7 @@ Global
 		{146F07E5-68CC-4132-B549-F9280D72161E} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 		{B4649E45-053F-4F3A-AB91-C8D0C1B9E646} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 		{50560E92-546B-4C85-B5BC-B17B658AD655} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
+		{A67B1BCC-A383-4BE6-8BD5-E9BE8A60C1AD} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4AA608D7-351A-4872-A7C1-0E41362A6953}
