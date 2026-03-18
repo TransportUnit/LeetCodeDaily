@@ -261,6 +261,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1009. Complement of Base 10
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1878. Get Biggest Three Rhombus Sums in a Grid", "Problems\1878. Get Biggest Three Rhombus Sums in a Grid\1878. Get Biggest Three Rhombus Sums in a Grid.csproj", "{95328CD7-975A-4A97-9595-A142BA598DA6}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1727. Largest Submatrix With Rearrangements", "Problems\1727. Largest Submatrix With Rearrangements\1727. Largest Submatrix With Rearrangements.csproj", "{CB7ABE4C-3448-4FF3-8656-223A7E90C1B0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -775,6 +777,10 @@ Global
 		{95328CD7-975A-4A97-9595-A142BA598DA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{95328CD7-975A-4A97-9595-A142BA598DA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{95328CD7-975A-4A97-9595-A142BA598DA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB7ABE4C-3448-4FF3-8656-223A7E90C1B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB7ABE4C-3448-4FF3-8656-223A7E90C1B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB7ABE4C-3448-4FF3-8656-223A7E90C1B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB7ABE4C-3448-4FF3-8656-223A7E90C1B0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -906,6 +912,7 @@ Global
 		{A67B1BCC-A383-4BE6-8BD5-E9BE8A60C1AD} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 		{CC2C5747-659D-4B7E-AF48-5494B5501982} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 		{95328CD7-975A-4A97-9595-A142BA598DA6} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
+		{CB7ABE4C-3448-4FF3-8656-223A7E90C1B0} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4AA608D7-351A-4872-A7C1-0E41362A6953}
