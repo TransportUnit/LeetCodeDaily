@@ -265,6 +265,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1727. Largest Submatrix Wit
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3070. Count Submatrices with Top-Left Element and Sum Less Than k", "Problems\3070. Count Submatrices with Top-Left Element and Sum Less Than k\3070. Count Submatrices with Top-Left Element and Sum Less Than k.csproj", "{62450039-706B-40C3-B14E-946BCA8D73B7}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3212. Count Submatrices With Equal Frequency of X and Y", "Problems\3212. Count Submatrices With Equal Frequency of X and Y\3212. Count Submatrices With Equal Frequency of X and Y.csproj", "{EC404490-05C9-409E-BF90-00C1FDF8E2A0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -787,6 +789,10 @@ Global
 		{62450039-706B-40C3-B14E-946BCA8D73B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{62450039-706B-40C3-B14E-946BCA8D73B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{62450039-706B-40C3-B14E-946BCA8D73B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC404490-05C9-409E-BF90-00C1FDF8E2A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC404490-05C9-409E-BF90-00C1FDF8E2A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC404490-05C9-409E-BF90-00C1FDF8E2A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC404490-05C9-409E-BF90-00C1FDF8E2A0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -920,6 +926,7 @@ Global
 		{95328CD7-975A-4A97-9595-A142BA598DA6} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 		{CB7ABE4C-3448-4FF3-8656-223A7E90C1B0} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 		{62450039-706B-40C3-B14E-946BCA8D73B7} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
+		{EC404490-05C9-409E-BF90-00C1FDF8E2A0} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4AA608D7-351A-4872-A7C1-0E41362A6953}
