@@ -1,12 +1,14 @@
 ﻿using LeetCodeDaily.Core;
 using LeetCodeDaily.Extensions;
 
-Case
-    .CreateCase(
-        (2, 2),
-        4)
-    .CreateCase(
-        (6, 9),
-        15)
-    .Detect()
-    .Run();
+"""
+[[7,6,3],[6,6,1]]
+18
+4
+
+[[7,2,9],[1,5,0],[2,6,6]]
+20
+6
+"""
+.ParseCases<(int[][], int), int>()
+.DetectAndRun();
