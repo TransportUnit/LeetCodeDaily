@@ -34,7 +34,11 @@ public class ResultGeneratorAttribute : Attribute
             entryAssembly
                 .GetTypes()
                 .FirstOrDefault(
-                    x => x.GetMethods().Any(y => y.GetCustomAttributes(typeof(ResultGeneratorAttribute)).Any()));
+                    x => 
+                        x.GetMethods(BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.Static)
+                        .Any(y => 
+                            y.GetCustomAttributes<ResultGeneratorAttribute>()
+                             .Any(z => z.ApproachIndex == approachIndex)));
 
         if (solutionType == null)
         {
