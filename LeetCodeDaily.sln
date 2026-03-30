@@ -273,6 +273,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3548. Equal Sum Grid Partit
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2840. Check if Strings Can be Made Equal With Operations II", "Problems\2840. Check if Strings Can be Made Equal With Operations II\2840. Check if Strings Can be Made Equal With Operations II.csproj", "{3B91184C-64D5-4F8A-A842-EB48B785AFF0}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2839. Check if Strings Can be Made Equal With Operations I", "Problems\2839. Check if Strings Can be Made Equal With Operations I\2839. Check if Strings Can be Made Equal With Operations I.csproj", "{DFF36056-88BC-4262-8F94-4FD831B6A74D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -811,6 +813,10 @@ Global
 		{3B91184C-64D5-4F8A-A842-EB48B785AFF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3B91184C-64D5-4F8A-A842-EB48B785AFF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3B91184C-64D5-4F8A-A842-EB48B785AFF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFF36056-88BC-4262-8F94-4FD831B6A74D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFF36056-88BC-4262-8F94-4FD831B6A74D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFF36056-88BC-4262-8F94-4FD831B6A74D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFF36056-88BC-4262-8F94-4FD831B6A74D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -948,6 +954,7 @@ Global
 		{39B5B0AA-4481-450E-AAE0-ADF76B952B9D} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 		{3C9CDFBC-3CA3-48D6-A033-BEFED78F028B} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 		{3B91184C-64D5-4F8A-A842-EB48B785AFF0} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
+		{DFF36056-88BC-4262-8F94-4FD831B6A74D} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4AA608D7-351A-4872-A7C1-0E41362A6953}
