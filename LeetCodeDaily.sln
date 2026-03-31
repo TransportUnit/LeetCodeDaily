@@ -277,6 +277,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2839. Check if Strings Can 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2573. Find the String with LCP", "Problems\2573. Find the String with LCP\2573. Find the String with LCP.csproj", "{35837D02-F936-47DC-A274-E84CA7FCE70E}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3474. Lexicographically Smallest Generated String", "Problems\3474. Lexicographically Smallest Generated String\3474. Lexicographically Smallest Generated String.csproj", "{F4944505-E236-4B4D-BF7C-845C1A976F66}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -823,6 +825,10 @@ Global
 		{35837D02-F936-47DC-A274-E84CA7FCE70E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35837D02-F936-47DC-A274-E84CA7FCE70E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35837D02-F936-47DC-A274-E84CA7FCE70E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4944505-E236-4B4D-BF7C-845C1A976F66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4944505-E236-4B4D-BF7C-845C1A976F66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4944505-E236-4B4D-BF7C-845C1A976F66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4944505-E236-4B4D-BF7C-845C1A976F66}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -962,6 +968,7 @@ Global
 		{3B91184C-64D5-4F8A-A842-EB48B785AFF0} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 		{DFF36056-88BC-4262-8F94-4FD831B6A74D} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 		{35837D02-F936-47DC-A274-E84CA7FCE70E} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
+		{F4944505-E236-4B4D-BF7C-845C1A976F66} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4AA608D7-351A-4872-A7C1-0E41362A6953}
