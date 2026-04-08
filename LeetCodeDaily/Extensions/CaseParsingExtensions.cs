@@ -60,6 +60,41 @@ public static class CaseParsingExtensions
         return baseCase!;
     }
 
+    public static Case<(TInput1, TInput2), TResult> ParseCases<TInput1, TInput2, TResult>(this string rawInput)
+    {
+        return rawInput.ParseCases<(TInput1, TInput2), TResult>();
+    }
+
+    public static Case<(TInput1, TInput2, TInput3), TResult> ParseCases<TInput1, TInput2, TInput3, TResult>(this string rawInput)
+    {
+        return rawInput.ParseCases<(TInput1, TInput2, TInput3), TResult>();
+    }
+
+    public static Case<(TInput1, TInput2, TInput3, TInput4), TResult> ParseCases<TInput1, TInput2, TInput3, TInput4, TResult>(this string rawInput)
+    {
+        return rawInput.ParseCases<(TInput1, TInput2, TInput3, TInput4), TResult>();
+    }
+
+    public static Case<(TInput1, TInput2, TInput3, TInput4, TInput5), TResult> ParseCases<TInput1, TInput2, TInput3, TInput4, TInput5, TResult>(this string rawInput)
+    {
+        return rawInput.ParseCases<(TInput1, TInput2, TInput3, TInput4, TInput5), TResult>();
+    }
+
+    public static Case<(TInput1, TInput2, TInput3, TInput4, TInput5, TInput6), TResult> ParseCases<TInput1, TInput2, TInput3, TInput4, TInput5, TInput6, TResult>(this string rawInput)
+    {
+        return rawInput.ParseCases<(TInput1, TInput2, TInput3, TInput4, TInput5, TInput6), TResult>();
+    }
+
+    public static Case<(TInput1, TInput2, TInput3, TInput4, TInput5, TInput6, TInput7), TResult> ParseCases<TInput1, TInput2, TInput3, TInput4, TInput5, TInput6, TInput7, TResult>(this string rawInput)
+    {
+        return rawInput.ParseCases<(TInput1, TInput2, TInput3, TInput4, TInput5, TInput6, TInput7), TResult>();
+    }
+
+    public static Case<(TInput1, TInput2, TInput3, TInput4, TInput5, TInput6, TInput7, TInput8), TResult> ParseCases<TInput1, TInput2, TInput3, TInput4, TInput5, TInput6, TInput7, TInput8, TResult>(this string rawInput)
+    {
+        return rawInput.ParseCases<(TInput1, TInput2, TInput3, TInput4, TInput5, TInput6, TInput7, TInput8), TResult>();
+    }
+
     private static object ParseLine(string line, Type targetType)
     {
         if (targetType.IsArray)
