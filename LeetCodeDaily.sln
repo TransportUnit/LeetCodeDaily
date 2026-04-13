@@ -283,6 +283,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3653. XOR After Range Multi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "657. Robot Return to Origin", "Problems\657. Robot Return to Origin\657. Robot Return to Origin.csproj", "{0726D9A8-D778-4639-942C-77BC53EF3844}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1848. Minimum Distance to the Target Element", "Problems\1848. Minimum Distance to the Target Element\1848. Minimum Distance to the Target Element.csproj", "{9932826A-70C8-4E76-B793-AC96DB16921F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -841,6 +843,10 @@ Global
 		{0726D9A8-D778-4639-942C-77BC53EF3844}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0726D9A8-D778-4639-942C-77BC53EF3844}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0726D9A8-D778-4639-942C-77BC53EF3844}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9932826A-70C8-4E76-B793-AC96DB16921F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9932826A-70C8-4E76-B793-AC96DB16921F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9932826A-70C8-4E76-B793-AC96DB16921F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9932826A-70C8-4E76-B793-AC96DB16921F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -983,6 +989,7 @@ Global
 		{F4944505-E236-4B4D-BF7C-845C1A976F66} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 		{C1AFDB15-812D-4982-B278-17F42F1BCD9A} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 		{0726D9A8-D778-4639-942C-77BC53EF3844} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
+		{9932826A-70C8-4E76-B793-AC96DB16921F} = {7C0406F4-177F-4571-8741-A5EB88DB5B26}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4AA608D7-351A-4872-A7C1-0E41362A6953}
