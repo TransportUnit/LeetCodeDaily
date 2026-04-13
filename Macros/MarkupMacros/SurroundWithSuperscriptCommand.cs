@@ -91,12 +91,33 @@ namespace MarkupMacros
         private void Execute(object sender, EventArgs e)
         {
             ThreadHelper.ThrowIfNotOnUIThread();
-            var dte = (DTE2)Package.GetGlobalService(typeof(DTE));
-            var sel = (TextSelection)dte.ActiveDocument.Selection;
-            if (!sel.IsEmpty)
+            var dte = (DTE2)ServiceProvider.GetServiceAsync(typeof(DTE)).Result; // Use the service provider
+
+            if (dte?.ActiveDocument?.Selection is TextSelection sel && !sel.IsEmpty)
             {
-                string text = sel.Text;
-                sel.Text = $"<sup>{text}</sup>";
+                // 1. Capture the text
+                string selectedText = sel.Text;
+
+                // 2. Open an Undo Context so this is treated as ONE action
+                dte.UndoContext.Open("Surround With Superscript");
+
+                try
+                {
+                    // 3. Clear the selection by deleting the text first
+                    // This prevents the "ghosting" > symbols often caused by direct assignment
+                    sel.Delete();
+
+                    // 4. Insert the new formatted string at the current cursor point
+                    string formattedText = $"<sup>{selectedText}</sup>";
+                    sel.Insert(formattedText);
+
+                    // 5. Optional: Re-select the text if you want to keep it highlighted
+                    // sel.CharLeft(true, formattedText.Length); 
+                }
+                finally
+                {
+                    dte.UndoContext.Close();
+                }
             }
         }
     }
