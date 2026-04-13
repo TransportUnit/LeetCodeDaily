@@ -4,13 +4,13 @@ Problem description
 
 <br/>
 
-**Example 1:**
+# **Example 1:**
 
 - **Input:** `input1 = 2`, `input2 = 2`
 - **Output:** `4`
 - **Explanation:** `2 + 2 = 4`.
 
-**Example 2:**
+# **Example 2:**
 
 - **Input:** `input1 = 6`, `input2 = 9`
 - **Output:** `15`
@@ -18,6 +18,12 @@ Problem description
 
 <br/>
 
-**Constraints:**
+# **Constraints:**
 
 *   `-2`<sup>`31`</sup>` <= input1, input2 <= 2`<sup>`31`</sup>`- 1`
+
+<br/>
+
+<details><summary>Hint 1</summary></details>
+<details><summary>Hint 2</summary></details>
+<details><summary>Hint 3</summary></details>
