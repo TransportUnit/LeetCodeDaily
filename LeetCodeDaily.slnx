@@ -124,6 +124,7 @@
     <Project Path="Problems/374. Guess Number Higher or Lower/374. Guess Number Higher or Lower.csproj" />
     <Project Path="Problems/417. Pacific Atlantic Water Flow/417. Pacific Atlantic Water Flow.csproj" />
     <Project Path="Problems/476. Number Complement/476. Number Complement.csproj" />
+    <Project Path="Problems/48. Rotate Image/48. Rotate Image.csproj" Id="73e90779-0f77-4653-999f-3c4594f979db" />
     <Project Path="Problems/53. Maximum Subarray/53. Maximum Subarray.csproj" />
     <Project Path="Problems/539. Minimum Time Difference/539. Minimum Time Difference.csproj" />
     <Project Path="Problems/58. Length of Last Word/58. Length of Last Word.csproj" />
