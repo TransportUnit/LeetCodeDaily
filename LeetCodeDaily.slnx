@@ -129,6 +129,7 @@
     <Project Path="Problems/539. Minimum Time Difference/539. Minimum Time Difference.csproj" />
     <Project Path="Problems/58. Length of Last Word/58. Length of Last Word.csproj" />
     <Project Path="Problems/6. Zigzag Conversion/6. Zigzag Conversion.csproj" />
+    <Project Path="Problems/61. Rotate List/61. Rotate List.csproj" Id="876523b9-e1b1-4dd5-88ae-04c4310503e2" />
     <Project Path="Problems/657. Robot Return to Origin/657. Robot Return to Origin.csproj" />
     <Project Path="Problems/69. Sqrt(x)/69. Sqrt(x).csproj" />
     <Project Path="Problems/7. Reverse Integer/7. Reverse Integer.csproj" />
