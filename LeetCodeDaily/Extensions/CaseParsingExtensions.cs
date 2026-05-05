@@ -97,6 +97,9 @@ public static class CaseParsingExtensions
 
     private static object ParseLine(string line, Type targetType)
     {
+        if (ParserRegistry.TryParse(line, targetType, out var custom))
+            return custom;
+
         if (targetType.IsArray)
         {
             var elemType = targetType.GetElementType()!;
