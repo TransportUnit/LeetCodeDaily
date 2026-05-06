@@ -1,19 +1,22 @@
 ﻿using LeetCodeDaily.Core;
 
-Console.Write("Calculate convergences? (This will take a while) [y|n]: ");
-var userInput = Console.ReadLine();
-
-if (userInput?.ToLower().FirstOrDefault() == 'y')
+if (!Console.IsInputRedirected)
 {
-    Directory.CreateDirectory("./converger");
+    Console.Write("Calculate convergences? (This will take a while) [y|n]: ");
+    var userInput = Console.ReadLine();
 
-    var sw = System.Diagnostics.Stopwatch.StartNew();
-    Converger.CalculateConvergences("./converger/result.txt");
-    sw.Stop();
-    Console.WriteLine("Elapsed time: {0} ({1} ms)", sw.Elapsed, sw.ElapsedMilliseconds);
+    if (userInput?.ToLower().FirstOrDefault() == 'y')
+    {
+        Directory.CreateDirectory("./converger");
+
+        var sw = System.Diagnostics.Stopwatch.StartNew();
+        Converger.CalculateConvergences("./converger/result.txt");
+        sw.Stop();
+        Console.WriteLine("Elapsed time: {0} ({1} ms)", sw.Elapsed, sw.ElapsedMilliseconds);
+    }
+
+    Console.WriteLine();
 }
-
-Console.WriteLine();
 
 Case
     .CreateCase(
