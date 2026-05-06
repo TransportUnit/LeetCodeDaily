@@ -22,52 +22,52 @@ public class Case<TInput, TResult>
     {
         Case.SetResultChecker<TInput, TResult>(c =>
         {
-            // this is sufficient for value types (such as int, string, etc.)
-            if (
-                c.ExpectedResult is IEnumerable expectedEnumerable &&
-                c.ActualResult is IEnumerable resultEnumerable)
+            return DeepEquals(c.ActualResult, c.ExpectedResult);
+        });
+    }
+
+    private static bool DeepEquals(object? actual, object? expected)
+    {
+        // null handling
+        if (actual is null || expected is null)
+            return actual is null && expected is null;
+
+        // string ist IEnumerable<char>, soll aber als Wert verglichen werden
+        if (actual is string aStr && expected is string eStr)
+            return aStr.Equals(eStr);
+
+        // beide IEnumerable → rekursiv vergleichen
+        if (actual is IEnumerable aEnum && expected is IEnumerable eEnum)
+        {
+            var aEnumerator = aEnum.GetEnumerator();
+            var eEnumerator = eEnum.GetEnumerator();
+
+            try
             {
-                var expectedEnumerator = expectedEnumerable.GetEnumerator();
-                var resultEnumerator = resultEnumerable.GetEnumerator();
-
-                try
+                while (true)
                 {
-                    // basically a copy of the System.Linq.Enumerable.SequenceEqual extension method that uses
-                    // the generic IEnumerable type instead of IEnumerable<TSource>
-                    while (expectedEnumerator.MoveNext())
-                    {
-                        if (!resultEnumerator.MoveNext() || !expectedEnumerator.Current.Equals(resultEnumerator.Current))
-                        {
-                            return false;
-                        }
-                    }
+                    var aHasNext = aEnumerator.MoveNext();
+                    var eHasNext = eEnumerator.MoveNext();
 
-                    if (resultEnumerator.MoveNext())
-                    {
+                    if (aHasNext != eHasNext)
                         return false;
-                    }
 
-                    return true;
-                }
-                finally
-                {
-                    if (expectedEnumerator is IDisposable expectedDisposable)
-                    {
-                        expectedDisposable.Dispose();
-                    }
-                    if (resultEnumerator is IDisposable resultDisposable)
-                    {
-                        resultDisposable.Dispose();
-                    }
+                    if (!aHasNext) // beide fertig
+                        return true;
+
+                    if (!DeepEquals(aEnumerator.Current, eEnumerator.Current))
+                        return false;
                 }
             }
-
-            return c.ActualResult switch
+            finally
             {
-                null => c.ExpectedResult is null,
-                not null => c.ActualResult.Equals(c.ExpectedResult)
-            };
-        });
+                if (aEnumerator is IDisposable aDisp) aDisp.Dispose();
+                if (eEnumerator is IDisposable eDisp) eDisp.Dispose();
+            }
+        }
+
+        // fallback: normaler Equals
+        return actual.Equals(expected);
     }
 
     public Case(TInput input, TResult expectedResult)
