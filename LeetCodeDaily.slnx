@@ -33,6 +33,7 @@
     <Project Path="Problems/1758. Minimum Changes To Make Alternating Binary String/1758. Minimum Changes To Make Alternating Binary String.csproj" />
     <Project Path="Problems/179. Largest Number/179. Largest Number.csproj" />
     <Project Path="Problems/1848. Minimum Distance to the Target Element/1848. Minimum Distance to the Target Element.csproj" />
+    <Project Path="Problems/1861. Rotating the Box/1861. Rotating the Box.csproj" Id="f94e2d32-2fe4-48b1-b409-2f0b5100511f" />
     <Project Path="Problems/1878. Get Biggest Three Rhombus Sums in a Grid/1878. Get Biggest Three Rhombus Sums in a Grid.csproj" />
     <Project Path="Problems/1888. Minimum Number of Flips to Make the Binary String Alternating/1888. Minimum Number of Flips to Make the Binary String Alternating.csproj" />
     <Project Path="Problems/1894. Find the Student that Will Replace the Chalk/1894. Find the Student that Will Replace the Chalk.csproj" />
