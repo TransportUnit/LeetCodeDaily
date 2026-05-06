@@ -138,6 +138,7 @@
     <Project Path="Problems/744. Find Smallest Letter Greater Than Target/744. Find Smallest Letter Greater Than Target.csproj" />
     <Project Path="Problems/75. Sort Colors/75. Sort Colors.csproj" />
     <Project Path="Problems/769. Max Chunks To Make Sorted/769. Max Chunks To Make Sorted.csproj" />
+    <Project Path="Problems/796. Rotate String/796. Rotate String.csproj" Id="fdf5cfb4-5ed8-432a-a05a-4e919541dba7" />
     <Project Path="Problems/8. String to Integer (atoi)/8. String to Integer (atoi).csproj" />
     <Project Path="Problems/812. Largest Triangle Area/812. Largest Triangle Area.csproj" />
     <Project Path="Problems/874. Walking Robot Simulation/874. Walking Robot Simulation.csproj" />
