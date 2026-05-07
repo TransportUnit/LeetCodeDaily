@@ -45,6 +45,7 @@
     <Project Path="Problems/1941. Check if All Characters Have Equal Number of Occurrences/1941. Check if All Characters Have Equal Number of Occurrences.csproj" />
     <Project Path="Problems/1945. Sum of Digits of String After Convert/1945. Sum of Digits of String After Convert.csproj" />
     <Project Path="Problems/1975. Maximum Matrix Sum/1975. Maximum Matrix Sum.csproj" />
+    <Project Path="Problems/198. House Robber/198. House Robber.csproj" Id="7115fba3-4e86-4fa5-9dd9-9d05e9709b5d" />
     <Project Path="Problems/1980. Find Unique Binary String/1980. Find Unique Binary String.csproj" />
     <Project Path="Problems/20. Valid Parentheses/20. Valid Parentheses.csproj" />
     <Project Path="Problems/200. Number of Islands/200. Number of Islands.csproj" />
