@@ -6,6 +6,7 @@
     <Project Path="Problems/1009. Complement of Base 10 Integer/1009. Complement of Base 10 Integer.csproj" />
     <Project Path="Problems/1015. Smallest Integer Divisible by K/1015. Smallest Integer Divisible by K.csproj" />
     <Project Path="Problems/1018. Binary Prefix Divisible By 5/1018. Binary Prefix Divisible By 5.csproj" />
+    <Project Path="Problems/1137. N-th Tribonacci Number/1137. N-th Tribonacci Number.csproj" Id="4fceb532-876a-44c6-8463-28b6cf103991" />
     <Project Path="Problems/125. Valid Palindrome/125. Valid Palindrome.csproj" />
     <Project Path="Problems/1262. Greatest Sum Divisible by Three/1262. Greatest Sum Divisible by Three.csproj" />
     <Project Path="Problems/1266. Minimum Time Visiting All Points/1266. Minimum Time Visiting All Points.csproj" />
