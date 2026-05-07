@@ -140,6 +140,7 @@
     <Project Path="Problems/70. Climbing Stairs/70. Climbing Stairs.csproj" Id="672c7b54-820d-4808-bd69-0890a2ed3315" />
     <Project Path="Problems/706. Design HashMap/706. Design HashMap.csproj" />
     <Project Path="Problems/744. Find Smallest Letter Greater Than Target/744. Find Smallest Letter Greater Than Target.csproj" />
+    <Project Path="Problems/746. Min Cost Climbing Stairs/746. Min Cost Climbing Stairs.csproj" Id="b74dc980-bfa7-4c8a-b947-6be15674e495" />
     <Project Path="Problems/75. Sort Colors/75. Sort Colors.csproj" />
     <Project Path="Problems/769. Max Chunks To Make Sorted/769. Max Chunks To Make Sorted.csproj" />
     <Project Path="Problems/796. Rotate String/796. Rotate String.csproj" Id="fdf5cfb4-5ed8-432a-a05a-4e919541dba7" />
