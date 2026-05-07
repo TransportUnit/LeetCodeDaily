@@ -32,8 +32,6 @@ public class Solution
             result[i] = prefixMax[i];
         }
 
-        List<int> segments = new();
-
         int segmentStart = 0;
         int segmentMax = int.MinValue;
 
