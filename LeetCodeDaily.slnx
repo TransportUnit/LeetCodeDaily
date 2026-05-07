@@ -135,6 +135,7 @@
     <Project Path="Problems/657. Robot Return to Origin/657. Robot Return to Origin.csproj" />
     <Project Path="Problems/69. Sqrt(x)/69. Sqrt(x).csproj" />
     <Project Path="Problems/7. Reverse Integer/7. Reverse Integer.csproj" />
+    <Project Path="Problems/70. Climbing Stairs/70. Climbing Stairs.csproj" Id="672c7b54-820d-4808-bd69-0890a2ed3315" />
     <Project Path="Problems/706. Design HashMap/706. Design HashMap.csproj" />
     <Project Path="Problems/744. Find Smallest Letter Greater Than Target/744. Find Smallest Letter Greater Than Target.csproj" />
     <Project Path="Problems/75. Sort Colors/75. Sort Colors.csproj" />
