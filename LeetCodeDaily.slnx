@@ -73,6 +73,7 @@
     <Project Path="Problems/2432. The Employee That Worked on the Longest Task/2432. The Employee That Worked on the Longest Task.csproj" />
     <Project Path="Problems/2460. Apply Operations to an Array/2460. Apply Operations to an Array.csproj" />
     <Project Path="Problems/2483. Minimum Penalty for a Shop/2483. Minimum Penalty for a Shop.csproj" />
+    <Project Path="Problems/2553. Separate the Digits in an Array/2553. Separate the Digits in an Array.csproj" Id="13cb85ed-a269-4608-bb41-d792f0f8f40a" />
     <Project Path="Problems/2554. Maximum Number of Integers to Choose From a Range I/2554. Maximum Number of Integers to Choose From a Range I.csproj" />
     <Project Path="Problems/2558. Take Gifts From the Richest Pile/2558. Take Gifts From the Richest Pile.csproj" />
     <Project Path="Problems/2570. Merge Two 2D Arrays by Summing Values/2570. Merge Two 2D Arrays by Summing Values.csproj" />
