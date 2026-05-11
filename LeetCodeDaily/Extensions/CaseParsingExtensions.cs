@@ -7,6 +7,43 @@ namespace LeetCodeDaily.Extensions;
 
 public static class CaseParsingExtensions
 {
+    public static void UnsafeRun(this string input, int approachIndex = 0)
+    {
+        var entryAssembly = Assembly.GetEntryAssembly();
+
+        var solutionType =
+            entryAssembly!
+                .GetTypes()
+                .FirstOrDefault(
+                    x =>
+                        x.GetMethods(BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.Static)
+                        .Any(y =>
+                            y.GetCustomAttributes<ResultGeneratorAttribute>()
+                             .Any(z => z.ApproachIndex == approachIndex)));
+
+        var resultGeneratorMethodInfo =
+            solutionType!
+                .GetMethods(BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic)
+                .FirstOrDefault(x => x.GetCustomAttributes(typeof(ResultGeneratorAttribute)).Any(x => ((ResultGeneratorAttribute)x).ApproachIndex == approachIndex));
+
+        var returnType = resultGeneratorMethodInfo!.ReturnType;
+
+        var parameters = resultGeneratorMethodInfo.GetParameters();
+
+        var typeArguments = new List<Type>();
+        typeArguments.AddRange(parameters.Select(p => p.ParameterType));
+        typeArguments.Add(returnType);
+
+        var methodCall =
+            typeof(CaseParsingExtensions)
+            .GetMethods(BindingFlags.Public | BindingFlags.Static)
+            .First(m => m.IsGenericMethod && m.Name == nameof(CaseParsingExtensions.ParseCases))
+            .MakeGenericMethod(typeArguments.ToArray());
+
+        var baseCase = methodCall.Invoke(null, new object[] { input });
+        (baseCase as dynamic)!.DetectAndRun(approachIndex);
+    }
+
     public static Case<TInput, TResult> ParseCases<TInput, TResult>(this string rawInput)
     {
         var caseBlocks = Regex
