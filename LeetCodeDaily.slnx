@@ -125,6 +125,7 @@
     <Project Path="Problems/3637. Trionic Array I/3637. Trionic Array I.csproj" />
     <Project Path="Problems/3653. XOR After Range Multiplication Queries I/3653. XOR After Range Multiplication Queries I.csproj" />
     <Project Path="Problems/3660. Jump Game IX/3660. Jump Game IX.csproj" Id="f6a0cad5-f1b7-4198-8734-396afe99db2c" />
+    <Project Path="Problems/3689. Maximum Total Subarray Value I/3689. Maximum Total Subarray Value I.csproj" Id="e653d25a-d308-48ec-bfe6-6426b01f01f5" />
     <Project Path="Problems/37. Sudoku Solver/37. Sudoku Solver.csproj" />
     <Project Path="Problems/374. Guess Number Higher or Lower/374. Guess Number Higher or Lower.csproj" />
     <Project Path="Problems/417. Pacific Atlantic Water Flow/417. Pacific Atlantic Water Flow.csproj" />
