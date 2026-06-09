@@ -30,8 +30,33 @@ public static class CaseParsingExtensions
 
         var parameters = resultGeneratorMethodInfo.GetParameters();
 
+        var parameterTypes = parameters.Select(p => p.ParameterType).ToArray();
+
+        if (parameterTypes.Length > 8)
+        {
+            throw new InvalidOperationException("Too many input parameters (max 8).");
+        }
+
         var typeArguments = new List<Type>();
-        typeArguments.AddRange(parameters.Select(p => p.ParameterType));
+
+        if (parameterTypes.Length == 1)
+        {
+            typeArguments.Add(parameterTypes[0]);
+        }
+        else if (parameterTypes.Length > 1)
+        {
+            var tupleType =
+                typeof(ValueTuple<>).Assembly
+                    .GetType("System.ValueTuple`" + parameterTypes.Length)!
+                    .MakeGenericType(parameterTypes);
+
+            typeArguments.Add(tupleType);
+        }
+        else
+        {
+            typeArguments.Add((Type)null!);
+        }
+
         typeArguments.Add(returnType);
 
         var methodCall =
