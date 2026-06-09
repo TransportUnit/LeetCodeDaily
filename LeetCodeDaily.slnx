@@ -55,6 +55,7 @@
     <Project Path="Problems/2094. Finding 3-Digit Even Numbers/2094. Finding 3-Digit Even Numbers.csproj" />
     <Project Path="Problems/2108. Find First Palindromic String in the Array/2108. Find First Palindromic String in the Array.csproj" />
     <Project Path="Problems/2110. Number of Smooth Descent Periods of a Stock/2110. Number of Smooth Descent Periods of a Stock.csproj" />
+    <Project Path="Problems/2144. Minimum Cost of Buying Candies With Discount/2144. Minimum Cost of Buying Candies With Discount.csproj" Id="d4a56c31-de1a-454b-b5dd-7addd98dbf87" />
     <Project Path="Problems/2147. Number of Ways to Divide a Long Corridor/2147. Number of Ways to Divide a Long Corridor.csproj" />
     <Project Path="Problems/2154. Keep Multiplying Found Values by Two/2154. Keep Multiplying Found Values by Two.csproj" />
     <Project Path="Problems/2169. Count Operations to Obtain Zero/2169. Count Operations to Obtain Zero.csproj" />
