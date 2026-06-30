@@ -14,6 +14,7 @@
     <Project Path="Problems/1309. Decrypt String from Alphabet to Integer Mapping/1309. Decrypt String from Alphabet to Integer Mapping.csproj" />
     <Project Path="Problems/1310. XOR Queries of a Subarray/1310. XOR Queries of a Subarray.csproj" />
     <Project Path="Problems/1351. Count Negative Numbers in a Sorted Matrix/1351. Count Negative Numbers in a Sorted Matrix.csproj" />
+    <Project Path="Problems/1358. Number of Substrings Containing All Three Characters/1358. Number of Substrings Containing All Three Characters.csproj" Id="74714775-87a0-4527-a28b-ab86f5dd660b" />
     <Project Path="Problems/136. Single Number/136. Single Number.csproj" />
     <Project Path="Problems/137. Single Number II/137. Single Number II.csproj" />
     <Project Path="Problems/1390. Four Divisors/1390. Four Divisors.csproj" />
