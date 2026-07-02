@@ -107,6 +107,7 @@
     <Project Path="Problems/3212. Count Submatrices With Equal Frequency of X and Y/3212. Count Submatrices With Equal Frequency of X and Y.csproj" />
     <Project Path="Problems/3217. Delete Nodes From Linked List Present in Array/3217. Delete Nodes From Linked List Present in Array.csproj" />
     <Project Path="Problems/3228. Maximum Number of Operations to Move Ones to the End/3228. Maximum Number of Operations to Move Ones to the End.csproj" />
+    <Project Path="Problems/3286. Find a Safe Walk Through a Grid/3286. Find a Safe Walk Through a Grid.csproj" Id="99160d13-810d-4ac9-a461-a45abe56697a" />
     <Project Path="Problems/3314. Construct the Minimum Bitwise Array I/3314. Construct the Minimum Bitwise Array I.csproj" />
     <Project Path="Problems/3355. Zero Array Transformation I/3355. Zero Array Transformation I.csproj" />
     <Project Path="Problems/3370. Smallest Number With All Set Bits/3370. Smallest Number With All Set Bits.csproj" />
