@@ -1,0 +1,23 @@
+name: CI
+
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: "10.0.x"
+
+      - name: Unit tests (core library + scaffolder)
+        run: dotnet test Test/LeetCodeDaily.Tests -c Release
+
+      - name: Run all problems (integration)
+        run: dotnet run --project Test/LeetCodeDaily.Runner -c Release
