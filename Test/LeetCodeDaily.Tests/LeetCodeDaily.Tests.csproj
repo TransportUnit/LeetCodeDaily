@@ -20,6 +20,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\LeetCodeDaily\LeetCodeDaily.csproj" />
+    <ProjectReference Include="..\..\Tools\LeetCodeDaily.Scaffold\LeetCodeDaily.Scaffold.csproj" />
   </ItemGroup>
 
 </Project>
