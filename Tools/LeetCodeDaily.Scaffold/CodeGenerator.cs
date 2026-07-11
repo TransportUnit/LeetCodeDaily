@@ -3,12 +3,12 @@ using System.Text.RegularExpressions;
 
 namespace LeetCodeDaily.Scaffold;
 
-/// <summary>Erzeugt Solution.cs, Program.cs und README.md für ein Problem.</summary>
+/// <summary>Generates Solution.cs, Program.cs and README.md for a problem.</summary>
 public static class CodeGenerator
 {
     /// <summary>
-    /// Baut den Namespace im Stil der bestehenden Projekte,
-    /// z.B. "3653. XOR After Range Multiplication Queries I"
+    /// Builds the namespace in the style of the existing projects,
+    /// e.g. "3653. XOR After Range Multiplication Queries I"
     /// → "_3653.XOR_After_Range_Multiplication_Queries_I".
     /// </summary>
     public static string BuildNamespace(string frontendId, string title)
@@ -28,7 +28,7 @@ public static class CodeGenerator
 
         snippet = snippet.ReplaceLineEndings("\n").Trim();
 
-        // [ResultGenerator] vor die Solution-Methode setzen (nicht bei Design-Aufgaben)
+        // put [ResultGenerator] on the solution method (not for design problems)
         if (!meta.IsDesignProblem && meta.Name is not null)
         {
             var methodName = char.ToUpperInvariant(meta.Name[0]) + meta.Name[1..];
@@ -82,8 +82,8 @@ public static class CodeGenerator
     private static string GenerateFallbackProgram(QuestionDetail question, ProblemMeta meta)
     {
         var reason = meta.IsDesignProblem
-            ? $"Design-Aufgabe ({meta.ClassName}): Cases müssen manuell aufgebaut werden."
-            : "Die Cases konnten nicht automatisch generiert werden (Typ oder Format nicht unterstützt).";
+            ? $"Design problem ({meta.ClassName}): cases have to be set up manually."
+            : "The cases could not be generated automatically (unsupported type or format).";
 
         var rawCases = question.ExampleTestcases.ReplaceLineEndings("\n").Trim();
 
@@ -93,15 +93,15 @@ public static class CodeGenerator
 
             // TODO: {reason}
             //
-            // Beispiel-Inputs von LeetCode:
+            // Example inputs from LeetCode:
             {Comment(rawCases)}
             //
-            // Varianten:
+            // Options:
             //   1. "<cases>".ParseCases<TIn..., TResult>().DetectAndRun();
             //   2. Case.CreateCase(input, expected).Detect().Run();
-            //   3. eigener Checker: .SetResultChecker(c => ...) für In-Place-Aufgaben
+            //   3. custom checker: .SetResultChecker(c => ...) for in-place problems
 
-            Console.WriteLine("TODO: Testcases anlegen ({question.ProjectName})");
+            Console.WriteLine("TODO: set up test cases ({question.ProjectName})");
 
             """.ReplaceLineEndings("\n");
     }
@@ -147,7 +147,7 @@ public static class CodeGenerator
         return """
             public class Solution
             {
-                // TODO: kein C#-Snippet von LeetCode erhalten
+                // TODO: no C# snippet received from LeetCode
             }
             """;
     }

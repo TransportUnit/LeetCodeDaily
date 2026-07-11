@@ -3,7 +3,7 @@ using System.Text.Json;
 
 namespace LeetCodeDaily.Scaffold;
 
-/// <summary>Dünner Client für LeetCodes öffentliche GraphQL-API (kein Login nötig).</summary>
+/// <summary>Thin client for LeetCode's public GraphQL API (no login required).</summary>
 public sealed class LeetCodeClient : IDisposable
 {
     private readonly HttpClient _http;
@@ -33,7 +33,7 @@ public sealed class LeetCodeClient : IDisposable
             .GetString()!;
     }
 
-    /// <summary>Liefert die Dailies des aktuellen und des Vormonats, neueste zuerst.</summary>
+    /// <summary>Returns the dailies of the current and previous month, newest first.</summary>
     public async Task<IReadOnlyList<QuestionSummary>> GetRecentDailiesAsync()
     {
         var today = DateTime.UtcNow;
@@ -81,7 +81,7 @@ public sealed class LeetCodeClient : IDisposable
             .ToArray();
     }
 
-    /// <summary>Sucht den titleSlug zu einer Aufgabennummer (questionFrontendId).</summary>
+    /// <summary>Looks up the titleSlug for a problem number (questionFrontendId).</summary>
     public async Task<string?> FindTitleSlugByNumberAsync(string frontendId)
     {
         var data = await QueryAsync(

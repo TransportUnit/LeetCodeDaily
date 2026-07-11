@@ -1,4 +1,4 @@
 @echo off
-rem Legt ein LeetCode-Problem-Projekt an (siehe scaffold.ps1 fuer Beispiele).
+rem Scaffolds a LeetCode problem project (see scaffold.ps1 for examples).
 dotnet run --project "%~dp0Tools\LeetCodeDaily.Scaffold" -c Release -- %*
 exit /b %ERRORLEVEL%

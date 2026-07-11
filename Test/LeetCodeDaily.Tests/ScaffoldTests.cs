@@ -123,7 +123,7 @@ public class CodeGeneratorTests
         Assert.Contains("namespace _3653.XOR_After_Range_Multiplication_Queries_I;", solution);
         Assert.Contains("[ResultGenerator]", solution);
 
-        // Attribut steht direkt über der Methode
+        // the attribute sits directly above the method
         var attributeIndex = solution.IndexOf("[ResultGenerator]");
         var methodIndex = solution.IndexOf("public int XorAfterQueries");
         Assert.True(attributeIndex >= 0 && attributeIndex < methodIndex);
@@ -162,17 +162,17 @@ public class CodeGeneratorTests
         Assert.Contains("# **Example 2:**", readme);
         Assert.Contains("# **Constraints:**", readme);
 
-        // Code mit sup/sub bleibt HTML (inkl. Entities), damit 10^9 korrekt gerendert wird
+        // code with sup/sub stays HTML (entities included) so 10^9 renders correctly
         Assert.Contains("<code>1 &lt;= nums[i] &lt;= 10<sup>9</sup></code>", readme);
 
-        // Beispielzeilen: Klammern escaped, Bold-Marker vorhanden
+        // example lines: brackets escaped, bold markers present
         Assert.Contains("**Input:** nums = \\[1,1,1\\], queries = \\[\\[0,2,1,4\\]\\]", readme);
         Assert.Contains("**Output:** 4", readme);
 
-        // Hints als aufklappbare Details
+        // hints as collapsible details
         Assert.Contains("<details><summary>Hint 1</summary>", readme);
 
-        // kein rohes HTML-Gerüst übrig
+        // no raw HTML skeleton left over
         Assert.DoesNotContain("<p>", readme);
         Assert.DoesNotContain("<div", readme);
         Assert.DoesNotContain("<span", readme);
@@ -255,12 +255,12 @@ public class SolutionFileUpdaterTests : IDisposable
 
         Assert.Equal(SolutionFileUpdater.RecentProblemCount, problemLines.Length);
 
-        // neuestes Projekt oben, älteste rausgetrimmt
+        // newest project on top, oldest trimmed away
         Assert.Contains($"Problems/{SolutionFileUpdater.RecentProblemCount + 2}. P", problemLines[0]);
         Assert.DoesNotContain("Problems/1. P/", content);
         Assert.DoesNotContain("Problems/2. P/", content);
 
-        // Core immer enthalten
+        // core always included
         Assert.Contains("LeetCodeDaily/LeetCodeDaily.csproj", content);
     }
 }

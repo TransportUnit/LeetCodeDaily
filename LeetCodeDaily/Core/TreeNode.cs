@@ -51,8 +51,8 @@ public class TreeNode
             sb.Remove(sb.Length - 1, 1);
         }
 
-        // Trailing nulls entfernen, damit das Ergebnis dem kanonischen
-        // LeetCode-Format entspricht (z.B. [1,2,3] statt [1,2,3,null,null]).
+        // Trim trailing nulls so the result matches the canonical
+        // LeetCode format (e.g. [1,2,3] instead of [1,2,3,null,null]).
         const string trailingNull = ",null";
         while (sb.Length >= trailingNull.Length + 1
                && sb.ToString(sb.Length - trailingNull.Length, trailingNull.Length) == trailingNull)

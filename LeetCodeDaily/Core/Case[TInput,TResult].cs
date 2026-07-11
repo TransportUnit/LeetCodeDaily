@@ -32,15 +32,15 @@ public class Case<TInput, TResult>
         if (actual is null || expected is null)
             return actual is null && expected is null;
 
-        // string ist IEnumerable<char>, soll aber als Wert verglichen werden
+        // string is IEnumerable<char>, but should be compared as a value
         if (actual is string aStr && expected is string eStr)
             return aStr.Equals(eStr);
 
-        // TreeNode/ListNode strukturell vergleichen (ToString serialisiert kanonisch)
+        // compare TreeNode/ListNode structurally (ToString serializes canonically)
         if ((actual is TreeNode && expected is TreeNode) || (actual is ListNode && expected is ListNode))
             return actual.ToString()!.Equals(expected.ToString());
 
-        // beide IEnumerable → rekursiv vergleichen
+        // both IEnumerable → compare recursively
         if (actual is IEnumerable aEnum && expected is IEnumerable eEnum)
         {
             var aEnumerator = aEnum.GetEnumerator();
@@ -56,7 +56,7 @@ public class Case<TInput, TResult>
                     if (aHasNext != eHasNext)
                         return false;
 
-                    if (!aHasNext) // beide fertig
+                    if (!aHasNext) // both exhausted
                         return true;
 
                     if (!DeepEquals(aEnumerator.Current, eEnumerator.Current))
@@ -70,7 +70,7 @@ public class Case<TInput, TResult>
             }
         }
 
-        // fallback: normaler Equals
+        // fallback: regular Equals
         return actual.Equals(expected);
     }
 
@@ -108,8 +108,8 @@ public class Case<TInput, TResult>
     {
         if (warmup && ResultGenerator is not null)
         {
-            // JIT-Warmup, damit der erste Case nicht künstlich langsamer misst.
-            // Achtung: nicht verwenden, wenn die Lösung ihren Input mutiert (in-place)!
+            // JIT warmup so the first case does not measure artificially slow.
+            // Caution: do not use when the solution mutates its input (in-place)!
             ResultGenerator(Input);
         }
 
@@ -164,9 +164,9 @@ public class Case<TInput, TResult>
     }
 
     /// <summary>
-    /// Vergleicht das Ergebnis auf oberster Ebene als Multimenge statt als Sequenz &#8211;
-    /// für Aufgaben, bei denen LeetCode "return the answer in any order" erlaubt.
-    /// Elemente selbst (z.B. innere Listen) werden weiterhin geordnet verglichen.
+    /// Compares the result as a multiset instead of a sequence at the top level &#8211;
+    /// for problems where LeetCode allows "return the answer in any order".
+    /// Elements themselves (e.g. inner lists) are still compared in order.
     /// </summary>
     public Case<TInput, TResult> IgnoreResultOrder()
     {

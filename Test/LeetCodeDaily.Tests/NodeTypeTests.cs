@@ -19,8 +19,8 @@ public class NodeTypeTests
     [Fact]
     public void TreeNode_Deserialize_KeepsLastNodeOnOddValueCount()
     {
-        // Regression: "[1,2]" verlor früher den letzten Knoten,
-        // weil die Schleife bei einem einzelnen Restwert abbrach.
+        // Regression: "[1,2]" used to lose the last node because the
+        // loop stopped when a single value was left.
         var tree = TreeNode.Deserialize("[1,2]");
 
         Assert.NotNull(tree);

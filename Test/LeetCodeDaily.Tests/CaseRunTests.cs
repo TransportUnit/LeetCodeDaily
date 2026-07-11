@@ -3,9 +3,9 @@ using LeetCodeDaily.Extensions;
 
 namespace LeetCodeDaily.Tests;
 
-// Hinweis: Case<TInput, TResult> hält ResultGenerator/ResultChecker statisch pro
-// geschlossenem generischen Typ. Damit sich Tests nicht gegenseitig beeinflussen,
-// verwendet jeder Test hier eine eigene Typkombination oder setzt den Checker zurück.
+// Note: Case<TInput, TResult> holds ResultGenerator/ResultChecker statically per
+// closed generic type. To keep tests from affecting each other, every test here
+// uses its own type combination.
 public class CaseRunTests
 {
     [Fact]

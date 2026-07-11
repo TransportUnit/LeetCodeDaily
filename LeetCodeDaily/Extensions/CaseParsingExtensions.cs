@@ -223,7 +223,7 @@ public static class CaseParsingExtensions
                 return castMethod.Invoke(null, new object[] { line, Type.Missing, Type.Missing })!;
             }
 
-            // Spezialfall: string[]
+            // special case: string[]
             if (elemType == typeof(string))
             {
                 return Regex.Matches(line, "\"(.*?)\"")
@@ -232,7 +232,7 @@ public static class CaseParsingExtensions
                     .ToArray();
             }
 
-            // Standardfall für int[], double[], etc.
+            // default case for int[], double[], etc.
             var rawValues = line
                 .Trim('[', ']')
                 .Split(new[] { ',' }, StringSplitOptions.RemoveEmptyEntries)

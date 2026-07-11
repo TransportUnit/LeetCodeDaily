@@ -29,9 +29,9 @@ public record QuestionDetail(
 public record ParamMeta(string Name, string Type);
 
 /// <summary>
-/// Geparste Form des metaData-JSON von LeetCode. Bei "normalen" Aufgaben sind
-/// <see cref="Name"/>, <see cref="Params"/> und <see cref="ReturnType"/> gesetzt;
-/// bei Design-Aufgaben (MyHashMap &amp; Co.) ist <see cref="ClassName"/> gesetzt.
+/// Parsed form of LeetCode's metaData JSON. For "regular" problems,
+/// <see cref="Name"/>, <see cref="Params"/> and <see cref="ReturnType"/> are set;
+/// for design problems (MyHashMap &amp; co.) <see cref="ClassName"/> is set.
 /// </summary>
 public record ProblemMeta(
     string? Name,

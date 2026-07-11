@@ -3,14 +3,14 @@ using System.Text.RegularExpressions;
 namespace LeetCodeDaily.Scaffold;
 
 /// <summary>
-/// Pflegt die .slnx-Dateien textbasiert (bewusst kein XML-Rewrite,
-/// damit Formatierung und GUIDs der bestehenden Einträge unangetastet bleiben).
+/// Maintains the .slnx files text-based (deliberately no XML rewrite, so the
+/// formatting and GUIDs of existing entries stay untouched).
 /// </summary>
 public static partial class SolutionFileUpdater
 {
     public const int RecentProblemCount = 15;
 
-    /// <summary>Fügt das Projekt alphabetisch sortiert in den /Problems/-Ordner der Haupt-Solution ein.</summary>
+    /// <summary>Inserts the project alphabetically into the /Problems/ folder of the main solution.</summary>
     public static bool AddToMainSolution(string slnxPath, string projectRelativePath)
     {
         var lines = File.ReadAllLines(slnxPath).ToList();
@@ -43,8 +43,8 @@ public static partial class SolutionFileUpdater
     }
 
     /// <summary>
-    /// Pflegt die schnell ladende "Recent"-Solution: neuestes Problem oben,
-    /// maximal <see cref="RecentProblemCount"/> Einträge, Core + Tests immer dabei.
+    /// Maintains the fast-loading "Recent" solution: newest problem on top,
+    /// at most <see cref="RecentProblemCount"/> entries, core + tests always included.
     /// </summary>
     public static void UpdateRecentSolution(string recentSlnxPath, string projectRelativePath)
     {

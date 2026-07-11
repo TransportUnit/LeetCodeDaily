@@ -2,18 +2,18 @@ using LeetCodeDaily.Scaffold;
 
 // LeetCodeDaily.Scaffold
 //
-// Legt ein komplettes Problem-Projekt an: Ordner, csproj, Solution.cs mit echter
-// Methodensignatur, Program.cs mit den Beispiel-Testcases (inkl. Expected Results)
-// und fertig formatierter README.md. Trägt das Projekt außerdem in die
-// LeetCodeDaily.slnx (alphabetisch) und die LeetCodeDaily.Recent.slnx ein.
+// Creates a complete problem project: folder, csproj, Solution.cs with the real
+// method signature, Program.cs with the example test cases (including expected
+// results) and a fully formatted README.md. Also inserts the project into
+// LeetCodeDaily.slnx (alphabetically) and LeetCodeDaily.Recent.slnx.
 //
-// Aufrufe:
-//   scaffold                  heutige Daily Challenge
-//   scaffold --pick           aus den letzten Dailies auswählen (mit Difficulty)
-//   scaffold 3653             Problem per Nummer
-//   scaffold two-sum          Problem per Slug
-//   scaffold <leetcode-url>   Problem per URL
-//   Option --force            vorhandenes Projektverzeichnis überschreiben
+// Usage:
+//   scaffold                  today's daily challenge
+//   scaffold --pick           choose from recent dailies (with difficulty)
+//   scaffold 3653             problem by number
+//   scaffold two-sum          problem by slug
+//   scaffold <leetcode-url>   problem by URL
+//   Option --force            overwrite an existing project directory
 
 var force = args.Contains("--force");
 var pick = args.Contains("--pick");
@@ -111,7 +111,7 @@ static async Task<string> ResolveIdentifierAsync(LeetCodeClient client, string i
         throw new ArgumentException($"Could not extract a problem slug from '{identifier}'.");
     }
 
-    // Nummer → Slug via Suche
+    // number → slug via search
     if (identifier.All(char.IsDigit))
     {
         Console.WriteLine($"Looking up problem #{identifier}...");
@@ -120,7 +120,7 @@ static async Task<string> ResolveIdentifierAsync(LeetCodeClient client, string i
         return slug ?? throw new ArgumentException($"No problem with number {identifier} found.");
     }
 
-    // sonst: ist bereits ein Slug
+    // otherwise: already a slug
     return identifier;
 }
 

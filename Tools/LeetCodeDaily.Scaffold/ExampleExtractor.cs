@@ -5,9 +5,9 @@ namespace LeetCodeDaily.Scaffold;
 public static partial class ExampleExtractor
 {
     /// <summary>
-    /// Zieht die erwarteten Ergebnisse ("Output: ...") aus dem content-HTML.
-    /// Unterstützt sowohl das klassische &lt;pre&gt;-Format als auch das neuere
-    /// Format mit &lt;span class="example-io"&gt;.
+    /// Extracts the expected results ("Output: ...") from the content HTML.
+    /// Supports both the classic &lt;pre&gt; format and the newer format
+    /// with &lt;span class="example-io"&gt;.
     /// </summary>
     public static IReadOnlyList<string> ExtractExpectedOutputs(string contentHtml)
     {
@@ -18,9 +18,9 @@ public static partial class ExampleExtractor
     }
 
     /// <summary>
-    /// Baut aus den Beispiel-Inputs (exampleTestcases: eine Zeile pro Parameter,
-    /// Cases direkt hintereinander) und den Outputs die Testcase-Blöcke für Program.cs.
-    /// Liefert null, wenn Inputs und Outputs nicht zusammenpassen.
+    /// Builds the test-case blocks for Program.cs from the example inputs
+    /// (exampleTestcases: one line per parameter, cases back to back) and the
+    /// outputs. Returns null when inputs and outputs do not line up.
     /// </summary>
     public static string? BuildCaseBlocks(string exampleTestcases, int paramCount, IReadOnlyList<string> expectedOutputs)
     {

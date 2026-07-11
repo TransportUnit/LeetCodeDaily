@@ -3,8 +3,8 @@ namespace LeetCodeDaily.Scaffold;
 public static class TypeMapper
 {
     /// <summary>
-    /// Übersetzt einen LeetCode-metaData-Typ (z.B. "integer[][]", "list&lt;list&lt;integer&gt;&gt;")
-    /// in den C#-Typ für ParseCases. Liefert null für Typen, die der Parser nicht unterstützt.
+    /// Translates a LeetCode metaData type (e.g. "integer[][]", "list&lt;list&lt;integer&gt;&gt;")
+    /// into the C# type for ParseCases. Returns null for types the parser does not support.
     /// </summary>
     public static string? ToCSharpType(string leetCodeType)
     {

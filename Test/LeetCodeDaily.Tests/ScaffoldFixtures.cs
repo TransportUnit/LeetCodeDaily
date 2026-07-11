@@ -3,8 +3,8 @@ using LeetCodeDaily.Scaffold;
 namespace LeetCodeDaily.Tests;
 
 /// <summary>
-/// Nachgebaute API-Antworten im Format von LeetCodes GraphQL-API
-/// (Problem 3653, dessen handgepflegte README als Stil-Referenz im Repo liegt).
+/// Recreated API responses in the format of LeetCode's GraphQL API
+/// (problem 3653, whose hand-written README in this repo serves as the style reference).
 /// </summary>
 public static class ScaffoldFixtures
 {

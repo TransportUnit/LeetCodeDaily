@@ -1,8 +1,8 @@
 #!/usr/bin/env pwsh
-# Legt ein LeetCode-Problem-Projekt an. Beispiele:
-#   .\scaffold.ps1              → heutige Daily
-#   .\scaffold.ps1 --pick       → aus den letzten Dailies wählen
-#   .\scaffold.ps1 3653         → per Aufgabennummer
+# Scaffolds a LeetCode problem project. Examples:
+#   .\scaffold.ps1              → today's daily
+#   .\scaffold.ps1 --pick       → choose from recent dailies
+#   .\scaffold.ps1 3653         → by problem number
 $scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
 dotnet run --project "$scriptDir/Tools/LeetCodeDaily.Scaffold" -c Release -- @args
 exit $LASTEXITCODE

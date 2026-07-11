@@ -3,12 +3,12 @@ using System.Diagnostics;
 
 // LeetCodeDaily.Runner
 //
-// Baut alle Problem-Projekte einmal (ein MSBuild-Aufruf, parallel) und führt
-// anschließend die gebauten DLLs parallel aus. Ein Problem gilt als fehlgeschlagen,
-// wenn der Prozess einen ExitCode != 0 liefert oder "FAILED" ausgibt.
+// Builds all problem projects once (a single parallel MSBuild invocation) and
+// then runs the built DLLs in parallel. A problem counts as failed when its
+// process returns an exit code != 0 or prints "FAILED".
 //
-// Aufruf:
-//   dotnet run --project Test/LeetCodeDaily.Runner [-- --filter <Teilstring>] [--debug]
+// Usage:
+//   dotnet run --project Test/LeetCodeDaily.Runner [-- --filter <substring>] [--debug]
 
 const string configurationDefault = "Release";
 
@@ -96,7 +96,7 @@ return failed > 0 ? 1 : 0;
 
 bool BuildAll(string[] projectDirs, string config)
 {
-    // Traversal-Projekt: ein einziger MSBuild-Aufruf baut alle Projekte parallel.
+    // traversal project: a single MSBuild invocation builds all projects in parallel
     var traversalPath = Path.Combine(Path.GetTempPath(), $"leetcode-runner-{Guid.NewGuid():N}.proj");
 
     var items = string.Join(
@@ -177,8 +177,8 @@ async Task<(bool Passed, string Output)> RunProblemAsync(string projectDir, stri
     var output = await outputTask;
     var error = await errorTask;
 
-    // Fehlerkriterium: ExitCode oder ein FAILED-Testcase. stderr allein ist kein
-    // Fehler mehr (Warnungen führten früher zu falschen "FAILED"-Meldungen).
+    // failure criteria: exit code or a FAILED test case. stderr alone no longer
+    // counts as a failure (warnings used to cause false "FAILED" results).
     var passed = process.ExitCode == 0 && !output.Contains("FAILED");
 
     return (passed, string.IsNullOrWhiteSpace(error) ? output : output + Environment.NewLine + error);
