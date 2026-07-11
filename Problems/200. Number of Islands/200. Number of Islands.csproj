@@ -1,15 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>net8.0</TargetFramework>
-    <RootNamespace>_200._Number_of_Islands</RootNamespace>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
+  <!-- Common settings come from Problems/Directory.Build.props -->
 
-  <ItemGroup>
-    <ProjectReference Include="..\..\LeetCodeDaily\LeetCodeDaily.csproj" />
-  </ItemGroup>
+  <PropertyGroup>
+    <RootNamespace>_200._Number_of_Islands</RootNamespace>
+  </PropertyGroup>
 
 </Project>
