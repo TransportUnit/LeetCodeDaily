@@ -18,7 +18,7 @@ string cases =
 
 var inputs = new List<IList<int>>();
 var expectedOutputs = new List<int[]>();
-var lines = cases.Split("\r\n");
+var lines = cases.ReplaceLineEndings("\n").Split('\n');
 
 for (int i = 0; i < lines.Length; i++)
 {

@@ -162,6 +162,46 @@ public static class CaseParsingExtensions
         if (ParserRegistry.TryParse(line, targetType, out var custom))
             return custom;
 
+        if (line == "null" && !targetType.IsValueType)
+            return null!;
+
+        if (targetType == typeof(TreeNode))
+            return TreeNode.Deserialize(line)!;
+
+        if (targetType == typeof(ListNode))
+            return ListNode.Parse(line)!;
+
+        // IList<T> / IList<IList<T>> (LeetCode loves these)
+        if (targetType.IsGenericType && targetType.GetGenericTypeDefinition() == typeof(IList<>))
+        {
+            var itemType = targetType.GetGenericArguments()[0];
+
+            if (itemType.IsGenericType && itemType.GetGenericTypeDefinition() == typeof(IList<>))
+            {
+                var parseListMethod =
+                    typeof(Extensions)
+                    .GetMethods(BindingFlags.Public | BindingFlags.Static)
+                    .First(m => m.IsGenericMethod && m.Name == nameof(Extensions.ParseList))
+                    .MakeGenericMethod(itemType.GetGenericArguments()[0]);
+
+                return parseListMethod.Invoke(null, new object[] { line, Type.Missing, Type.Missing })!;
+            }
+
+            var arrayType = itemType.MakeArrayType();
+            return ParseLine(line, arrayType);
+        }
+
+        if (targetType == typeof(string))
+            return StripSurroundingQuotes(line);
+
+        if (targetType == typeof(char))
+        {
+            var trimmed = StripSurroundingQuotes(line.Trim('\''));
+            if (trimmed.Length != 1)
+                throw new FormatException($"Cannot parse '{line}' as char.");
+            return trimmed[0];
+        }
+
         if (targetType.IsArray)
         {
             var elemType = targetType.GetElementType()!;
@@ -203,6 +243,14 @@ public static class CaseParsingExtensions
         }
 
         return Convert.ChangeType(line, targetType, CultureInfo.InvariantCulture);
+    }
+
+    private static string StripSurroundingQuotes(string line)
+    {
+        if (line.Length >= 2 && line.StartsWith('"') && line.EndsWith('"'))
+            return line.Substring(1, line.Length - 2);
+
+        return line;
     }
 
     private static Array ToArrayOfType(this IEnumerable<object> source, Type elementType)

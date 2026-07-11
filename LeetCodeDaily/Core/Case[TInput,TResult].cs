@@ -36,6 +36,10 @@ public class Case<TInput, TResult>
         if (actual is string aStr && expected is string eStr)
             return aStr.Equals(eStr);
 
+        // TreeNode/ListNode strukturell vergleichen (ToString serialisiert kanonisch)
+        if ((actual is TreeNode && expected is TreeNode) || (actual is ListNode && expected is ListNode))
+            return actual.ToString()!.Equals(expected.ToString());
+
         // beide IEnumerable → rekursiv vergleichen
         if (actual is IEnumerable aEnum && expected is IEnumerable eEnum)
         {
@@ -100,8 +104,15 @@ public class Case<TInput, TResult>
         return ResultChecker(this);
     }
 
-    public Case<TInput, TResult> Run(bool printResult = true)
+    public Case<TInput, TResult> Run(bool printResult = true, bool warmup = false)
     {
+        if (warmup && ResultGenerator is not null)
+        {
+            // JIT-Warmup, damit der erste Case nicht künstlich langsamer misst.
+            // Achtung: nicht verwenden, wenn die Lösung ihren Input mutiert (in-place)!
+            ResultGenerator(Input);
+        }
+
         GenerateResult();
         Passed = ResultAsExpected();
         if (printResult)
@@ -152,14 +163,51 @@ public class Case<TInput, TResult>
         return this;
     }
 
+    /// <summary>
+    /// Vergleicht das Ergebnis auf oberster Ebene als Multimenge statt als Sequenz &#8211;
+    /// für Aufgaben, bei denen LeetCode "return the answer in any order" erlaubt.
+    /// Elemente selbst (z.B. innere Listen) werden weiterhin geordnet verglichen.
+    /// </summary>
+    public Case<TInput, TResult> IgnoreResultOrder()
+    {
+        ResultChecker = c => UnorderedDeepEquals(c.ActualResult, c.ExpectedResult);
+        return this;
+    }
+
+    private static bool UnorderedDeepEquals(object? actual, object? expected)
+    {
+        if (actual is not IEnumerable aEnum || expected is not IEnumerable eEnum
+            || actual is string || expected is string)
+        {
+            return DeepEquals(actual, expected);
+        }
+
+        var actualItems = aEnum.Cast<object?>().ToList();
+        var expectedItems = eEnum.Cast<object?>().ToList();
+
+        if (actualItems.Count != expectedItems.Count)
+            return false;
+
+        foreach (var expectedItem in expectedItems)
+        {
+            var matchIndex = actualItems.FindIndex(a => DeepEquals(a, expectedItem));
+            if (matchIndex < 0)
+                return false;
+
+            actualItems.RemoveAt(matchIndex);
+        }
+
+        return true;
+    }
+
     public Case<TInput, TResult> Detect(int approachIndex = 0)
     {
         ResultGeneratorAttribute.Detect(approachIndex);
         return this;
     }
 
-    public Case<TInput, TResult> DetectAndRun(int approachIndex = 0, bool printResult = true)
+    public Case<TInput, TResult> DetectAndRun(int approachIndex = 0, bool printResult = true, bool warmup = false)
     {
-        return Detect(approachIndex).Run(printResult);
+        return Detect(approachIndex).Run(printResult, warmup);
     }
 }

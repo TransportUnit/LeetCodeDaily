@@ -50,6 +50,16 @@ public class TreeNode
         {
             sb.Remove(sb.Length - 1, 1);
         }
+
+        // Trailing nulls entfernen, damit das Ergebnis dem kanonischen
+        // LeetCode-Format entspricht (z.B. [1,2,3] statt [1,2,3,null,null]).
+        const string trailingNull = ",null";
+        while (sb.Length >= trailingNull.Length + 1
+               && sb.ToString(sb.Length - trailingNull.Length, trailingNull.Length) == trailingNull)
+        {
+            sb.Remove(sb.Length - trailingNull.Length, trailingNull.Length);
+        }
+
         sb.Append("]");
         return sb.ToString();
     }
@@ -73,18 +83,16 @@ public class TreeNode
         var root = new TreeNode(int.Parse(vals.Dequeue()));
         queue.Enqueue(root);
 
-        while (queue.Count != 0 && vals.Count > 1)
+        while (queue.Count != 0 && vals.Count > 0)
         {
             var node = queue.Dequeue();
-            var left = vals.Dequeue();
-            var right = vals.Dequeue();
 
-            if (left != "null")
+            if (vals.TryDequeue(out var left) && left != "null")
             {
                 node.left = new TreeNode(int.Parse(left));
                 queue.Enqueue(node.left);
             }
-            if (right != "null")
+            if (vals.TryDequeue(out var right) && right != "null")
             {
                 node.right = new TreeNode(int.Parse(right));
                 queue.Enqueue(node.right);
