@@ -129,6 +129,7 @@
     <Project Path="Problems/3583. Count Special Triplets/3583. Count Special Triplets.csproj" />
     <Project Path="Problems/3606. Coupon Code Validator/3606. Coupon Code Validator.csproj" />
     <Project Path="Problems/3612. Process String with Special Operations I/3612. Process String with Special Operations I.csproj" />
+    <Project Path="Problems/3614. Process String with Special Operations II/3614. Process String with Special Operations II.csproj" />
     <Project Path="Problems/3637. Trionic Array I/3637. Trionic Array I.csproj" />
     <Project Path="Problems/3653. XOR After Range Multiplication Queries I/3653. XOR After Range Multiplication Queries I.csproj" />
     <Project Path="Problems/3660. Jump Game IX/3660. Jump Game IX.csproj" Id="f6a0cad5-f1b7-4198-8734-396afe99db2c" />

@@ -1,5 +1,6 @@
 <Solution>
   <Folder Name="/Problems/">
+    <Project Path="Problems/3614. Process String with Special Operations II/3614. Process String with Special Operations II.csproj" />
     <Project Path="Problems/3612. Process String with Special Operations I/3612. Process String with Special Operations I.csproj" />
     <Project Path="Problems/3754. Concatenate Non-Zero Digits and Multiply by Sum I/3754. Concatenate Non-Zero Digits and Multiply by Sum I.csproj" />
     <Project Path="Problems/1331. Rank Transform of an Array/1331. Rank Transform of an Array.csproj" />
@@ -14,7 +15,6 @@
     <Project Path="Problems/198. House Robber/198. House Robber.csproj" />
     <Project Path="Problems/746. Min Cost Climbing Stairs/746. Min Cost Climbing Stairs.csproj" />
     <Project Path="Problems/1137. N-th Tribonacci Number/1137. N-th Tribonacci Number.csproj" />
-    <Project Path="Problems/509. Fibonacci Number/509. Fibonacci Number.csproj" />
   </Folder>
   <Folder Name="/Test/">
     <Project Path="Test/LeetCodeDaily.Runner/LeetCodeDaily.Runner.csproj" />
