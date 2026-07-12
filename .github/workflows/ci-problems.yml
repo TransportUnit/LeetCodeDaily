@@ -1,0 +1,64 @@
+name: CI (changed problems)
+
+# Cheap check for problem-only pushes (e.g. "added 1331"): builds and runs
+# only the problem projects that changed, instead of the whole archive.
+# Infrastructure changes trigger the full run in ci.yml instead.
+on:
+  push:
+    branches: ["**"]
+    paths:
+      - "Problems/**"
+      - "!Problems/Directory.Build.props"
+  pull_request:
+    paths:
+      - "Problems/**"
+      - "!Problems/Directory.Build.props"
+
+jobs:
+  run-changed-problems:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: "10.0.x"
+
+      - name: Determine changed problems
+        run: |
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            base="${{ github.event.pull_request.base.sha }}"
+          elif [ "${{ github.event.before }}" != "0000000000000000000000000000000000000000" ] \
+              && git cat-file -e "${{ github.event.before }}" 2>/dev/null; then
+            base="${{ github.event.before }}"
+          else
+            # new branch or force push: fall back to the previous commit
+            base="$(git rev-parse HEAD^)"
+          fi
+
+          # quotepath=false: problem folders may contain non-ASCII characters
+          # (e.g. "1411. Number of Ways to Paint N × 3 Grid")
+          git -c core.quotepath=false diff --name-only "$base" HEAD -- 'Problems/' \
+            | cut -d/ -f2 \
+            | grep -v '^Directory.Build.props$' \
+            | sort -u > changed-problems.txt || true
+
+          echo "Changed problems:"
+          cat changed-problems.txt
+
+      - name: Run changed problems
+        run: |
+          failed=0
+          while IFS= read -r problem; do
+            if [ ! -d "Problems/$problem" ]; then
+              echo "Skipping '$problem' (directory no longer exists)."
+              continue
+            fi
+            echo "::group::$problem"
+            dotnet run --project Test/LeetCodeDaily.Runner -c Release -- --filter "$problem" || failed=1
+            echo "::endgroup::"
+          done < changed-problems.txt
+          exit $failed

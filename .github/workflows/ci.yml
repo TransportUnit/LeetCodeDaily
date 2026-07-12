@@ -1,9 +1,28 @@
-name: CI
+name: CI (full)
 
+# Full run: unit tests + all archived problems.
+# Triggers only on infrastructure changes. Problem-only pushes are covered
+# by the cheaper ci-problems.yml instead. Note: the .slnx files are
+# deliberately NOT listed here — the scaffolder touches them on every
+# problem push, and the runner does not use them anyway.
 on:
   push:
     branches: ["**"]
+    paths:
+      - "LeetCodeDaily/**"
+      - "Test/**"
+      - "Tools/**"
+      - "Problems/Directory.Build.props"
+      - ".github/workflows/**"
+      - "scaffold.*"
   pull_request:
+    paths:
+      - "LeetCodeDaily/**"
+      - "Test/**"
+      - "Tools/**"
+      - "Problems/Directory.Build.props"
+      - ".github/workflows/**"
+      - "scaffold.*"
 
 jobs:
   build-and-test:
