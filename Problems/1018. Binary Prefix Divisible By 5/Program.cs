@@ -30,7 +30,7 @@ string cases =
 
 var inputs = new List<int[]>();
 var expectedOutputs = new List<IList<bool>>();
-var lines = cases.Split("\r\n");
+var lines = cases.ReplaceLineEndings("\n").Split('\n');
 
 for(int i = 0; i < lines.Length; i++)
 {

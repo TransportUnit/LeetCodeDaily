@@ -160,9 +160,13 @@
     <Project Path="Problems/884. Uncommon Words from Two Sentences/884. Uncommon Words from Two Sentences.csproj" />
     <Project Path="Problems/94. Binary Tree Inorder Traversal/94. Binary Tree Inorder Traversal.csproj" />
   </Folder>
+  <Folder Name="/Tools/">
+    <Project Path="Tools/LeetCodeDaily.Scaffold/LeetCodeDaily.Scaffold.csproj" />
+  </Folder>
   <Folder Name="/Test/">
     <File Path="Test/run-all.ps1" />
     <Project Path="Test/LeetCodeDaily.Runner/LeetCodeDaily.Runner.csproj" Id="dfddc8d1-bb91-4360-a436-4095db868c69" />
+    <Project Path="Test/LeetCodeDaily.Tests/LeetCodeDaily.Tests.csproj" />
   </Folder>
   <Project Path="LeetCodeDaily/LeetCodeDaily.csproj" />
 </Solution>

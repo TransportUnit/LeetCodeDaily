@@ -1,58 +1,188 @@
-﻿using System.Diagnostics;
+using System.Collections.Concurrent;
+using System.Diagnostics;
+
+// LeetCodeDaily.Runner
+//
+// Builds all problem projects once (a single parallel MSBuild invocation) and
+// then runs the built DLLs in parallel. A problem counts as failed when its
+// process returns an exit code != 0 or prints "FAILED".
+//
+// Usage:
+//   dotnet run --project Test/LeetCodeDaily.Runner [-- --filter <substring>] [--debug]
+
+const string configurationDefault = "Release";
+
+var filter = string.Empty;
+var configuration = configurationDefault;
+
+for (int i = 0; i < args.Length; i++)
+{
+    switch (args[i])
+    {
+        case "--filter" when i + 1 < args.Length:
+            filter = args[++i];
+            break;
+        case "--debug":
+            configuration = "Debug";
+            break;
+        default:
+            Console.Error.WriteLine($"Unknown argument: {args[i]}");
+            Console.Error.WriteLine("Usage: LeetCodeDaily.Runner [--filter <substring>] [--debug]");
+            return 2;
+    }
+}
 
 var problemsDir = FindProblemsDirectory();
 
 var projects = Directory
     .GetDirectories(problemsDir)
-    .Where(dir => File.Exists(Path.Combine(dir, $"{Path.GetFileName(dir)}.csproj")));
+    .Where(dir => File.Exists(Path.Combine(dir, $"{Path.GetFileName(dir)}.csproj")))
+    .Where(dir => Path.GetFileName(dir).Contains(filter, StringComparison.OrdinalIgnoreCase))
+    .OrderBy(dir => Path.GetFileName(dir), StringComparer.OrdinalIgnoreCase)
+    .ToArray();
 
-int failed = 0;
-
-foreach (var project in projects)
+if (projects.Length == 0)
 {
-    var name = Path.GetFileName(project);
+    Console.WriteLine($"No problem projects found{(filter.Length > 0 ? $" matching '{filter}'" : "")}.");
+    return 1;
+}
 
-    Console.Write($"Running {name}... ");
+Console.WriteLine($"Building {projects.Length} problem project(s) ({configuration})...");
+
+var buildStopwatch = Stopwatch.StartNew();
+
+if (!BuildAll(projects, configuration))
+{
+    WriteColored("BUILD FAILED", ConsoleColor.Red);
+    Console.WriteLine();
+    return 1;
+}
+
+buildStopwatch.Stop();
+Console.WriteLine($"Build finished in {buildStopwatch.Elapsed.TotalSeconds:F1}s. Running...");
+Console.WriteLine();
+
+var results = new ConcurrentBag<(string Name, bool Passed, string Output)>();
+
+await Parallel.ForEachAsync(
+    projects,
+    new ParallelOptions { MaxDegreeOfParallelism = Environment.ProcessorCount },
+    async (project, cancellationToken) =>
+    {
+        var name = Path.GetFileName(project);
+        var (passed, output) = await RunProblemAsync(project, configuration, cancellationToken);
+        results.Add((name, passed, output));
+    });
+
+var failed = 0;
+
+foreach (var result in results.OrderBy(r => r.Name, StringComparer.OrdinalIgnoreCase))
+{
+    Console.Write($"{result.Name}... ");
+    WriteColored(result.Passed ? "PASSED" : "FAILED", result.Passed ? ConsoleColor.Green : ConsoleColor.Red);
+    Console.WriteLine();
+
+    if (!result.Passed)
+    {
+        Console.WriteLine(result.Output);
+        failed++;
+    }
+}
+
+Console.WriteLine();
+Console.WriteLine($"Done. Total: {results.Count}, Failed: {failed}");
+return failed > 0 ? 1 : 0;
+
+
+bool BuildAll(string[] projectDirs, string config)
+{
+    // traversal project: a single MSBuild invocation builds all projects in parallel
+    var traversalPath = Path.Combine(Path.GetTempPath(), $"leetcode-runner-{Guid.NewGuid():N}.proj");
+
+    var items = string.Join(
+        Environment.NewLine,
+        projectDirs.Select(dir =>
+        {
+            var csproj = Path.Combine(dir, $"{Path.GetFileName(dir)}.csproj");
+            return $"""    <P Include="{System.Security.SecurityElement.Escape(csproj)}" />""";
+        }));
+
+    File.WriteAllText(traversalPath, $"""
+        <Project>
+          <ItemGroup>
+        {items}
+          </ItemGroup>
+          <Target Name="Restore">
+            <MSBuild Projects="@(P)" Targets="Restore" BuildInParallel="true" Properties="Configuration={config}" />
+          </Target>
+          <Target Name="Build">
+            <MSBuild Projects="@(P)" Targets="Build" BuildInParallel="true" Properties="Configuration={config}" />
+          </Target>
+        </Project>
+        """);
+
+    try
+    {
+        return RunDotnet($"msbuild \"{traversalPath}\" -t:Restore -m -v:q --nologo")
+            && RunDotnet($"msbuild \"{traversalPath}\" -t:Build -m -v:q --nologo");
+    }
+    finally
+    {
+        File.Delete(traversalPath);
+    }
+}
+
+bool RunDotnet(string arguments)
+{
+    var process = Process.Start(new ProcessStartInfo
+    {
+        FileName = "dotnet",
+        Arguments = arguments,
+        UseShellExecute = false,
+    })!;
+
+    process.WaitForExit();
+    return process.ExitCode == 0;
+}
+
+async Task<(bool Passed, string Output)> RunProblemAsync(string projectDir, string config, CancellationToken cancellationToken)
+{
+    var name = Path.GetFileName(projectDir);
+    var dllPath = Directory
+        .GetFiles(projectDir, $"{name}.dll", SearchOption.AllDirectories)
+        .Where(p => p.Contains($"{Path.DirectorySeparatorChar}bin{Path.DirectorySeparatorChar}{config}{Path.DirectorySeparatorChar}"))
+        .OrderByDescending(File.GetLastWriteTimeUtc)
+        .FirstOrDefault();
+
+    if (dllPath is null)
+        return (false, $"No built assembly found for '{name}' ({config}).");
 
     var psi = new ProcessStartInfo
     {
         FileName = "dotnet",
-        Arguments = $"run --configuration Release --project \"{project}\"",
+        WorkingDirectory = projectDir,
         RedirectStandardOutput = true,
         RedirectStandardError = true,
-        RedirectStandardInput = true,
-        UseShellExecute = false
+        UseShellExecute = false,
     };
+    psi.ArgumentList.Add(dllPath);
 
     var process = Process.Start(psi)!;
 
-    string output = process.StandardOutput.ReadToEnd();
-    string error = process.StandardError.ReadToEnd();
+    var outputTask = process.StandardOutput.ReadToEndAsync(cancellationToken);
+    var errorTask = process.StandardError.ReadToEndAsync(cancellationToken);
 
-    process.WaitForExit();
+    await process.WaitForExitAsync(cancellationToken);
 
-    if (process.ExitCode != 0 || output.Contains("FAILED") || !string.IsNullOrWhiteSpace(error))
-    {
-        WriteColored("FAILED", ConsoleColor.Red);
-        Console.WriteLine();
+    var output = await outputTask;
+    var error = await errorTask;
 
-        Console.WriteLine(output);
-        Console.WriteLine(error);
+    // failure criteria: exit code or a FAILED test case. stderr alone no longer
+    // counts as a failure (warnings used to cause false "FAILED" results).
+    var passed = process.ExitCode == 0 && !output.Contains("FAILED");
 
-        failed++;
-    }
-    else
-    {
-        WriteColored("PASSED", ConsoleColor.Green);
-        Console.WriteLine();
-    }
-
-    Console.WriteLine();
+    return (passed, string.IsNullOrWhiteSpace(error) ? output : output + Environment.NewLine + error);
 }
-
-Console.WriteLine($"Done. Failed: {failed}");
-Environment.Exit(failed > 0 ? 1 : 0);
-
 
 void WriteColored(string text, ConsoleColor color)
 {

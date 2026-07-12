@@ -33,7 +33,7 @@ for (int approach = 0; approach < 2; approach++)
     List<char[][]> input = new();
     List<char[][]> expected = new();
 
-    var split = cases.Split("\r\n");
+    var split = cases.ReplaceLineEndings("\n").Split('\n');
 
     for (int i = 0; i < split.Length; i++)
     {

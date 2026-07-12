@@ -1,0 +1,27 @@
+<Solution>
+  <Folder Name="/Problems/">
+    <Project Path="Problems/1189. Maximum Number of Balloons/1189. Maximum Number of Balloons.csproj" />
+    <Project Path="Problems/1833. Maximum Ice Cream Bars/1833. Maximum Ice Cream Bars.csproj" />
+    <Project Path="Problems/733. Flood Fill/733. Flood Fill.csproj" />
+    <Project Path="Problems/3286. Find a Safe Walk Through a Grid/3286. Find a Safe Walk Through a Grid.csproj" />
+    <Project Path="Problems/1358. Number of Substrings Containing All Three Characters/1358. Number of Substrings Containing All Three Characters.csproj" />
+    <Project Path="Problems/2144. Minimum Cost of Buying Candies With Discount/2144. Minimum Cost of Buying Candies With Discount.csproj" />
+    <Project Path="Problems/3689. Maximum Total Subarray Value I/3689. Maximum Total Subarray Value I.csproj" />
+    <Project Path="Problems/2553. Separate the Digits in an Array/2553. Separate the Digits in an Array.csproj" />
+    <Project Path="Problems/198. House Robber/198. House Robber.csproj" />
+    <Project Path="Problems/746. Min Cost Climbing Stairs/746. Min Cost Climbing Stairs.csproj" />
+    <Project Path="Problems/1137. N-th Tribonacci Number/1137. N-th Tribonacci Number.csproj" />
+    <Project Path="Problems/509. Fibonacci Number/509. Fibonacci Number.csproj" />
+    <Project Path="Problems/70. Climbing Stairs/70. Climbing Stairs.csproj" />
+    <Project Path="Problems/3660. Jump Game IX/3660. Jump Game IX.csproj" />
+    <Project Path="Problems/796. Rotate String/796. Rotate String.csproj" />
+  </Folder>
+  <Folder Name="/Test/">
+    <Project Path="Test/LeetCodeDaily.Runner/LeetCodeDaily.Runner.csproj" />
+    <Project Path="Test/LeetCodeDaily.Tests/LeetCodeDaily.Tests.csproj" />
+  </Folder>
+  <Folder Name="/Tools/">
+    <Project Path="Tools/LeetCodeDaily.Scaffold/LeetCodeDaily.Scaffold.csproj" />
+  </Folder>
+  <Project Path="LeetCodeDaily/LeetCodeDaily.csproj" />
+</Solution>

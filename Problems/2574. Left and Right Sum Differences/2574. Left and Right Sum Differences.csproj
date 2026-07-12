@@ -1,15 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>net8.0</TargetFramework>
-	<RootNamespace>_2574.Left_and_Right_Sum_Differences</RootNamespace>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
+  <!-- Common settings come from Problems/Directory.Build.props -->
 
-  <ItemGroup>
-    <ProjectReference Include="..\..\LeetCodeDaily\LeetCodeDaily.csproj" />
-  </ItemGroup>
+  <PropertyGroup>
+    <RootNamespace>_2574.Left_and_Right_Sum_Differences</RootNamespace>
+  </PropertyGroup>
 
 </Project>

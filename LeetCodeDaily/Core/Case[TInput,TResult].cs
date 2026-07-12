@@ -32,11 +32,15 @@ public class Case<TInput, TResult>
         if (actual is null || expected is null)
             return actual is null && expected is null;
 
-        // string ist IEnumerable<char>, soll aber als Wert verglichen werden
+        // string is IEnumerable<char>, but should be compared as a value
         if (actual is string aStr && expected is string eStr)
             return aStr.Equals(eStr);
 
-        // beide IEnumerable → rekursiv vergleichen
+        // compare TreeNode/ListNode structurally (ToString serializes canonically)
+        if ((actual is TreeNode && expected is TreeNode) || (actual is ListNode && expected is ListNode))
+            return actual.ToString()!.Equals(expected.ToString());
+
+        // both IEnumerable → compare recursively
         if (actual is IEnumerable aEnum && expected is IEnumerable eEnum)
         {
             var aEnumerator = aEnum.GetEnumerator();
@@ -52,7 +56,7 @@ public class Case<TInput, TResult>
                     if (aHasNext != eHasNext)
                         return false;
 
-                    if (!aHasNext) // beide fertig
+                    if (!aHasNext) // both exhausted
                         return true;
 
                     if (!DeepEquals(aEnumerator.Current, eEnumerator.Current))
@@ -66,7 +70,7 @@ public class Case<TInput, TResult>
             }
         }
 
-        // fallback: normaler Equals
+        // fallback: regular Equals
         return actual.Equals(expected);
     }
 
@@ -100,8 +104,15 @@ public class Case<TInput, TResult>
         return ResultChecker(this);
     }
 
-    public Case<TInput, TResult> Run(bool printResult = true)
+    public Case<TInput, TResult> Run(bool printResult = true, bool warmup = false)
     {
+        if (warmup && ResultGenerator is not null)
+        {
+            // JIT warmup so the first case does not measure artificially slow.
+            // Caution: do not use when the solution mutates its input (in-place)!
+            ResultGenerator(Input);
+        }
+
         GenerateResult();
         Passed = ResultAsExpected();
         if (printResult)
@@ -152,14 +163,51 @@ public class Case<TInput, TResult>
         return this;
     }
 
+    /// <summary>
+    /// Compares the result as a multiset instead of a sequence at the top level &#8211;
+    /// for problems where LeetCode allows "return the answer in any order".
+    /// Elements themselves (e.g. inner lists) are still compared in order.
+    /// </summary>
+    public Case<TInput, TResult> IgnoreResultOrder()
+    {
+        ResultChecker = c => UnorderedDeepEquals(c.ActualResult, c.ExpectedResult);
+        return this;
+    }
+
+    private static bool UnorderedDeepEquals(object? actual, object? expected)
+    {
+        if (actual is not IEnumerable aEnum || expected is not IEnumerable eEnum
+            || actual is string || expected is string)
+        {
+            return DeepEquals(actual, expected);
+        }
+
+        var actualItems = aEnum.Cast<object?>().ToList();
+        var expectedItems = eEnum.Cast<object?>().ToList();
+
+        if (actualItems.Count != expectedItems.Count)
+            return false;
+
+        foreach (var expectedItem in expectedItems)
+        {
+            var matchIndex = actualItems.FindIndex(a => DeepEquals(a, expectedItem));
+            if (matchIndex < 0)
+                return false;
+
+            actualItems.RemoveAt(matchIndex);
+        }
+
+        return true;
+    }
+
     public Case<TInput, TResult> Detect(int approachIndex = 0)
     {
         ResultGeneratorAttribute.Detect(approachIndex);
         return this;
     }
 
-    public Case<TInput, TResult> DetectAndRun(int approachIndex = 0, bool printResult = true)
+    public Case<TInput, TResult> DetectAndRun(int approachIndex = 0, bool printResult = true, bool warmup = false)
     {
-        return Detect(approachIndex).Run(printResult);
+        return Detect(approachIndex).Run(printResult, warmup);
     }
 }
