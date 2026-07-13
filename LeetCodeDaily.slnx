@@ -11,6 +11,7 @@
     <Project Path="Problems/125. Valid Palindrome/125. Valid Palindrome.csproj" />
     <Project Path="Problems/1262. Greatest Sum Divisible by Three/1262. Greatest Sum Divisible by Three.csproj" />
     <Project Path="Problems/1266. Minimum Time Visiting All Points/1266. Minimum Time Visiting All Points.csproj" />
+    <Project Path="Problems/1291. Sequential Digits/1291. Sequential Digits.csproj" />
     <Project Path="Problems/1304. Find N Unique Integers Sum up to Zero/1304. Find N Unique Integers Sum up to Zero.csproj" />
     <Project Path="Problems/1309. Decrypt String from Alphabet to Integer Mapping/1309. Decrypt String from Alphabet to Integer Mapping.csproj" />
     <Project Path="Problems/1310. XOR Queries of a Subarray/1310. XOR Queries of a Subarray.csproj" />
