@@ -138,6 +138,7 @@
     <Project Path="Problems/37. Sudoku Solver/37. Sudoku Solver.csproj" />
     <Project Path="Problems/374. Guess Number Higher or Lower/374. Guess Number Higher or Lower.csproj" />
     <Project Path="Problems/3754. Concatenate Non-Zero Digits and Multiply by Sum I/3754. Concatenate Non-Zero Digits and Multiply by Sum I.csproj" />
+    <Project Path="Problems/3867. Sum of GCD of Formed Pairs/3867. Sum of GCD of Formed Pairs.csproj" />
     <Project Path="Problems/417. Pacific Atlantic Water Flow/417. Pacific Atlantic Water Flow.csproj" />
     <Project Path="Problems/476. Number Complement/476. Number Complement.csproj" />
     <Project Path="Problems/48. Rotate Image/48. Rotate Image.csproj" Id="73e90779-0f77-4653-999f-3c4594f979db" />
