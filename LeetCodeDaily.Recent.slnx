@@ -1,5 +1,6 @@
 <Solution>
   <Folder Name="/Problems/">
+    <Project Path="Problems/1260. Shift 2D Grid/1260. Shift 2D Grid.csproj" />
     <Project Path="Problems/1979. Find Greatest Common Divisor of Array/1979. Find Greatest Common Divisor of Array.csproj" />
     <Project Path="Problems/3867. Sum of GCD of Formed Pairs/3867. Sum of GCD of Formed Pairs.csproj" />
     <Project Path="Problems/653. Two Sum IV - Input is a BST/653. Two Sum IV - Input is a BST.csproj" />
@@ -14,7 +15,6 @@
     <Project Path="Problems/3286. Find a Safe Walk Through a Grid/3286. Find a Safe Walk Through a Grid.csproj" />
     <Project Path="Problems/1358. Number of Substrings Containing All Three Characters/1358. Number of Substrings Containing All Three Characters.csproj" />
     <Project Path="Problems/2144. Minimum Cost of Buying Candies With Discount/2144. Minimum Cost of Buying Candies With Discount.csproj" />
-    <Project Path="Problems/3689. Maximum Total Subarray Value I/3689. Maximum Total Subarray Value I.csproj" />
   </Folder>
   <Folder Name="/Test/">
     <Project Path="Test/LeetCodeDaily.Runner/LeetCodeDaily.Runner.csproj" />
