@@ -125,6 +125,7 @@
     <Project Path="Problems/3474. Lexicographically Smallest Generated String/3474. Lexicographically Smallest Generated String.csproj" />
     <Project Path="Problems/35. Search Insert Position/35. Search Insert Position.csproj" />
     <Project Path="Problems/3512. Minimum Operations to Make Array Sum Divisible by K/3512. Minimum Operations to Make Array Sum Divisible by K.csproj" />
+    <Project Path="Problems/3513. Number of Unique XOR Triplets I/3513. Number of Unique XOR Triplets I.csproj" />
     <Project Path="Problems/3531. Count Covered Buildings/3531. Count Covered Buildings.csproj" />
     <Project Path="Problems/3546. Equal Sum Grid Partition I/3546. Equal Sum Grid Partition I.csproj" />
     <Project Path="Problems/3548. Equal Sum Grid Partition II/3548. Equal Sum Grid Partition II.csproj" />
