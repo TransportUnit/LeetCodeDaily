@@ -105,6 +105,7 @@
     <Project Path="Problems/2900. Longest Unequal Adjacent Groups Subsequence I/2900. Longest Unequal Adjacent Groups Subsequence I.csproj" />
     <Project Path="Problems/3. Longest Substring Without Repeating Characters/3. Longest Substring Without Repeating Characters.csproj" />
     <Project Path="Problems/3010. Divide an Array Into Subarrays With Minimum Cost I/3010. Divide an Array Into Subarrays With Minimum Cost I.csproj" />
+    <Project Path="Problems/3014. Minimum Number of Pushes to Type Word I/3014. Minimum Number of Pushes to Type Word I.csproj" />
     <Project Path="Problems/3024. Type of Triangle/3024. Type of Triangle.csproj" />
     <Project Path="Problems/3070. Count Submatrices with Top-Left Element and Sum Less Than k/3070. Count Submatrices with Top-Left Element and Sum Less Than k.csproj" />
     <Project Path="Problems/3147. Taking Maximum Energy From the Mystic Dungeon/3147. Taking Maximum Energy From the Mystic Dungeon.csproj" />

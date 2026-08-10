@@ -1,5 +1,6 @@
 <Solution>
   <Folder Name="/Problems/">
+    <Project Path="Problems/3014. Minimum Number of Pushes to Type Word I/3014. Minimum Number of Pushes to Type Word I.csproj" />
     <Project Path="Problems/3731. Find Missing Elements/3731. Find Missing Elements.csproj" />
     <Project Path="Problems/3517. Smallest Palindromic Rearrangement I/3517. Smallest Palindromic Rearrangement I.csproj" />
     <Project Path="Problems/3513. Number of Unique XOR Triplets I/3513. Number of Unique XOR Triplets I.csproj" />
@@ -14,7 +15,6 @@
     <Project Path="Problems/1331. Rank Transform of an Array/1331. Rank Transform of an Array.csproj" />
     <Project Path="Problems/1189. Maximum Number of Balloons/1189. Maximum Number of Balloons.csproj" />
     <Project Path="Problems/1833. Maximum Ice Cream Bars/1833. Maximum Ice Cream Bars.csproj" />
-    <Project Path="Problems/733. Flood Fill/733. Flood Fill.csproj" />
   </Folder>
   <Folder Name="/Test/">
     <Project Path="Test/LeetCodeDaily.Runner/LeetCodeDaily.Runner.csproj" />
