@@ -1,5 +1,6 @@
 <Solution>
   <Folder Name="/Problems/">
+    <Project Path="Problems/3090. Maximum Length Substring With Two Occurrences/3090. Maximum Length Substring With Two Occurrences.csproj" />
     <Project Path="Problems/2958. Length of Longest Subarray With at Most K Frequency/2958. Length of Longest Subarray With at Most K Frequency.csproj" />
     <Project Path="Problems/2996. Smallest Missing Integer Greater Than Sequential Prefix Sum/2996. Smallest Missing Integer Greater Than Sequential Prefix Sum.csproj" />
     <Project Path="Problems/628. Maximum Product of Three Numbers/628. Maximum Product of Three Numbers.csproj" />
@@ -14,7 +15,6 @@
     <Project Path="Problems/1291. Sequential Digits/1291. Sequential Digits.csproj" />
     <Project Path="Problems/3614. Process String with Special Operations II/3614. Process String with Special Operations II.csproj" />
     <Project Path="Problems/3612. Process String with Special Operations I/3612. Process String with Special Operations I.csproj" />
-    <Project Path="Problems/3754. Concatenate Non-Zero Digits and Multiply by Sum I/3754. Concatenate Non-Zero Digits and Multiply by Sum I.csproj" />
   </Folder>
   <Folder Name="/Test/">
     <Project Path="Test/LeetCodeDaily.Runner/LeetCodeDaily.Runner.csproj" />

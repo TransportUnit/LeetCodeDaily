@@ -110,6 +110,7 @@
     <Project Path="Problems/3014. Minimum Number of Pushes to Type Word I/3014. Minimum Number of Pushes to Type Word I.csproj" />
     <Project Path="Problems/3024. Type of Triangle/3024. Type of Triangle.csproj" />
     <Project Path="Problems/3070. Count Submatrices with Top-Left Element and Sum Less Than k/3070. Count Submatrices with Top-Left Element and Sum Less Than k.csproj" />
+    <Project Path="Problems/3090. Maximum Length Substring With Two Occurrences/3090. Maximum Length Substring With Two Occurrences.csproj" />
     <Project Path="Problems/3147. Taking Maximum Energy From the Mystic Dungeon/3147. Taking Maximum Energy From the Mystic Dungeon.csproj" />
     <Project Path="Problems/3152. Special Array II/3152. Special Array II.csproj" />
     <Project Path="Problems/3190. Find Minimum Operations to Make All Elements Divisible by Three/3190. Find Minimum Operations to Make All Elements Divisible by Three.csproj" />
