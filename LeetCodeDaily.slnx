@@ -144,6 +144,7 @@
     <Project Path="Problems/3660. Jump Game IX/3660. Jump Game IX.csproj" Id="f6a0cad5-f1b7-4198-8734-396afe99db2c" />
     <Project Path="Problems/3689. Maximum Total Subarray Value I/3689. Maximum Total Subarray Value I.csproj" Id="e653d25a-d308-48ec-bfe6-6426b01f01f5" />
     <Project Path="Problems/37. Sudoku Solver/37. Sudoku Solver.csproj" />
+    <Project Path="Problems/3702. Longest Subsequence With Non-Zero Bitwise XOR/3702. Longest Subsequence With Non-Zero Bitwise XOR.csproj" />
     <Project Path="Problems/3731. Find Missing Elements/3731. Find Missing Elements.csproj" />
     <Project Path="Problems/374. Guess Number Higher or Lower/374. Guess Number Higher or Lower.csproj" />
     <Project Path="Problems/3754. Concatenate Non-Zero Digits and Multiply by Sum I/3754. Concatenate Non-Zero Digits and Multiply by Sum I.csproj" />
