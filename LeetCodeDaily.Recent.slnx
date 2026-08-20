@@ -1,5 +1,6 @@
 <Solution>
   <Folder Name="/Problems/">
+    <Project Path="Problems/3069. Distribute Elements Into Two Arrays I/3069. Distribute Elements Into Two Arrays I.csproj" />
     <Project Path="Problems/1386. Cinema Seat Allocation/1386. Cinema Seat Allocation.csproj" />
     <Project Path="Problems/3702. Longest Subsequence With Non-Zero Bitwise XOR/3702. Longest Subsequence With Non-Zero Bitwise XOR.csproj" />
     <Project Path="Problems/3090. Maximum Length Substring With Two Occurrences/3090. Maximum Length Substring With Two Occurrences.csproj" />
@@ -14,7 +15,6 @@
     <Project Path="Problems/1979. Find Greatest Common Divisor of Array/1979. Find Greatest Common Divisor of Array.csproj" />
     <Project Path="Problems/3867. Sum of GCD of Formed Pairs/3867. Sum of GCD of Formed Pairs.csproj" />
     <Project Path="Problems/653. Two Sum IV - Input is a BST/653. Two Sum IV - Input is a BST.csproj" />
-    <Project Path="Problems/1291. Sequential Digits/1291. Sequential Digits.csproj" />
   </Folder>
   <Folder Name="/Test/">
     <Project Path="Test/LeetCodeDaily.Runner/LeetCodeDaily.Runner.csproj" />
