@@ -1,0 +1,15 @@
+using LeetCodeDaily.Core;
+using LeetCodeDaily.Extensions;
+
+"""
+[2,10,7,5,4,1,8,6]
+5
+
+[0,-4,19,1,8,-2,-3,5]
+3
+
+[101]
+1
+"""
+.ParseCases<int[], int>()
+.DetectAndRun();
