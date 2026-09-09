@@ -1,0 +1,31 @@
+using LeetCodeDaily.Core;
+using LeetCodeDaily.Extensions;
+
+"""
+1002
+3
+
+998
+0
+
+1000000000000000
+3998998998999005
+
+999999
+999000
+
+6234
+5235
+
+2357457
+3713916
+
+123472452645653
+492888809581616
+
+999999999999999
+3998998998999000
+"""
+.ParseCases<long, long>()
+.DetectAndRun()
+.DetectAndRun(1);
