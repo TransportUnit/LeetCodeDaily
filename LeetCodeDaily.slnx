@@ -178,6 +178,7 @@
     <Project Path="Problems/796. Rotate String/796. Rotate String.csproj" Id="fdf5cfb4-5ed8-432a-a05a-4e919541dba7" />
     <Project Path="Problems/8. String to Integer (atoi)/8. String to Integer (atoi).csproj" />
     <Project Path="Problems/812. Largest Triangle Area/812. Largest Triangle Area.csproj" />
+    <Project Path="Problems/836. Rectangle Overlap/836. Rectangle Overlap.csproj" />
     <Project Path="Problems/874. Walking Robot Simulation/874. Walking Robot Simulation.csproj" />
     <Project Path="Problems/883. Projection Area of 3D Shapes/883. Projection Area of 3D Shapes.csproj" />
     <Project Path="Problems/884. Uncommon Words from Two Sentences/884. Uncommon Words from Two Sentences.csproj" />
