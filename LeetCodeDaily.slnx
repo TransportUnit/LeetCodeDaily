@@ -35,6 +35,7 @@
     <Project Path="Problems/1536. Minimum Swaps to Arrange a Binary Grid/1536. Minimum Swaps to Arrange a Binary Grid.csproj" />
     <Project Path="Problems/1545. Find Kth Bit in Nth Binary String/1545. Find Kth Bit in Nth Binary String.csproj" />
     <Project Path="Problems/1582. Special Positions in a Binary Matrix/1582. Special Positions in a Binary Matrix.csproj" />
+    <Project Path="Problems/1614. Maximum Nesting Depth of the Parentheses/1614. Maximum Nesting Depth of the Parentheses.csproj" />
     <Project Path="Problems/1684. Count the Number of Consistent Strings/1684. Count the Number of Consistent Strings.csproj" />
     <Project Path="Problems/1727. Largest Submatrix With Rearrangements/1727. Largest Submatrix With Rearrangements.csproj" />
     <Project Path="Problems/1758. Minimum Changes To Make Alternating Binary String/1758. Minimum Changes To Make Alternating Binary String.csproj" />
