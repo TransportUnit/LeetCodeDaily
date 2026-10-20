@@ -4,7 +4,7 @@ namespace _2089.Find_Target_Indices_After_Sorting_Array;
 
 public class Solution
 {
-    [ResultGeneratordded ]
+    [ResultGenerator]
     public IList<int> TargetIndices(int[] nums, int target)
     {
         int n = nums.Length;
